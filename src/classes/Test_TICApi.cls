@@ -11,9 +11,7 @@ public class Test_TICApi {
 		account AccContractor = DataFactory.createAccountContractor('Contractor');
 		Opportunity Oppo = DataFactory.createOpportunity(AccPartners, AccContractor);
 		Billing_Item__c BillItm = dataFactory.cretateBillingItems(Oppo, AccPartners);
-
 	}
-
 
 	@isTest
 	private static void SendInvoice200()
