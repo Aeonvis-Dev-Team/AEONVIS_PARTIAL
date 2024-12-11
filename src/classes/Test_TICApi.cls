@@ -13,6 +13,7 @@ public class Test_TICApi {
 		Billing_Item__c BillItm = dataFactory.cretateBillingItems(Oppo, AccPartners);
 	}
 
+
 	@isTest
 	private static void SendInvoice200()
 	{
