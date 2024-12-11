@@ -12,8 +12,7 @@ public class Test_TICApi {
 		Opportunity Oppo = DataFactory.createOpportunity(AccPartners, AccContractor);
 		Billing_Item__c BillItm = dataFactory.cretateBillingItems(Oppo, AccPartners);
 	}
-
-
+	
 	@isTest
 	private static void SendInvoice200()
 	{
@@ -131,16 +130,7 @@ public class Test_TICApi {
 
 		Test.stopTest();
 	}
-
-	//@isTest
-	//private static void testBatch() {
-	////Test.startTest();
-	////IntegrationTIC__c im = DataFactory.createCustomSettingsTIC();
-	//BatchSincroStatiInvoice gh = new BatchSincroStatiInvoice();
-	//Database.executeBatch(gh, 200);
-	////Test.stopTest();
-	//}
-
+	
 	@isTest
 	private static void structure()
 	{
