@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Controllo_Termini_di_Pagamento_su_Account</name>
+        <label>Controllo Termini di Pagamento su Account</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Assenti</defaultConnectorLabel>
+        <rules>
+            <name>Termini_Presenti_e_Contractor_Aeonvis</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Payment_terms__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Partner__r.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Aeonvis</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Aggiorna_Termini_di_Pagamento_in_Base_ad_Account</targetReference>
+            </connector>
+            <label>Termini Presenti e Contractor Aeonvis</label>
+        </rules>
+        <rules>
+            <name>Termini_Presenti_e_Contractor_Diverso_da_Aeonvis</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Partner__r.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Aeonvis</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Partner__r.Payment_terms__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Aggiorna_Termini_di_Pagamento_in_Base_a_Contractor</targetReference>
+            </connector>
+            <label>Termini Presenti e Contractor Diverso da Aeonvis</label>
+        </rules>
+    </decisions>
+    <description>Controlla che il campo Termini di Pagamento su Account correlato all&apos;Opportunità sia compilato. Se non è compilato, avvisa l&apos;utente di compilarlo</description>
+    <interviewLabel>Aggiorna Termini di Pagamento su Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Aggiorna Termini di Pagamento su Opportunità</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Aggiorna_Termini_di_Pagamento_in_Base_a_Contractor</name>
+        <label>Aggiorna Termini di Pagamento in Base a Contractor</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Payment_terms__c</field>
+            <value>
+                <elementReference>$Record.Partner__r.Payment_terms__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Aggiorna_Termini_di_Pagamento_in_Base_ad_Account</name>
+        <label>Aggiorna Termini di Pagamento in Base ad Account</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Payment_terms__c</field>
+            <value>
+                <elementReference>$Record.Account.Payment_terms__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Controllo_Termini_di_Pagamento_su_Account</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

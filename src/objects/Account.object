@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Phone</fields>
+        <fields>BillingAddress</fields>
+        <fields>Website</fields>
+        <fields>OwnerId</fields>
+        <label>Account Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Aggiornato_da_bonifica__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Aggiornato da bonifica</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Cap_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF((ISBLANK(BillingCountry ) || ISNULL(BillingCountry )), &apos;&apos;,  IF(BillingCountry != &apos;Italy&apos;, &apos;00000&apos;,BillingPostalCode ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cap Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ChannelProgramLevelName</fullName>
+    </fields>
+    <fields>
+        <fullName>ChannelProgramName</fullName>
+    </fields>
+    <fields>
+        <fullName>Codice_SDI__c</fullName>
+        <externalId>false</externalId>
+        <label>Codice SDI</label>
+        <length>7</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_name__c</fullName>
+        <externalId>false</externalId>
+        <label>Ragione sociale</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Since__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Since</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2015</fullName>
+                    <default>false</default>
+                    <label>2015</label>
+                </value>
+                <value>
+                    <fullName>2016</fullName>
+                    <default>false</default>
+                    <label>2016</label>
+                </value>
+                <value>
+                    <fullName>2017</fullName>
+                    <default>false</default>
+                    <label>2017</label>
+                </value>
+                <value>
+                    <fullName>2018</fullName>
+                    <default>false</default>
+                    <label>2018</label>
+                </value>
+                <value>
+                    <fullName>2019</fullName>
+                    <default>false</default>
+                    <label>2019</label>
+                </value>
+                <value>
+                    <fullName>2020</fullName>
+                    <default>false</default>
+                    <label>2020</label>
+                </value>
+                <value>
+                    <fullName>2021</fullName>
+                    <default>false</default>
+                    <label>2021</label>
+                </value>
+                <value>
+                    <fullName>2022</fullName>
+                    <default>false</default>
+                    <label>2022</label>
+                </value>
+                <value>
+                    <fullName>2023</fullName>
+                    <default>false</default>
+                    <label>2023</label>
+                </value>
+                <value>
+                    <fullName>2024</fullName>
+                    <default>false</default>
+                    <label>2024</label>
+                </value>
+                <value>
+                    <fullName>2025</fullName>
+                    <default>false</default>
+                    <label>2025</label>
+                </value>
+                <value>
+                    <fullName>2026</fullName>
+                    <default>false</default>
+                    <label>2026</label>
+                </value>
+                <value>
+                    <fullName>2027</fullName>
+                    <default>false</default>
+                    <label>2027</label>
+                </value>
+                <value>
+                    <fullName>2028</fullName>
+                    <default>false</default>
+                    <label>2028</label>
+                </value>
+                <value>
+                    <fullName>2029</fullName>
+                    <default>false</default>
+                    <label>2029</label>
+                </value>
+                <value>
+                    <fullName>2030</fullName>
+                    <default>false</default>
+                    <label>2030</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Data_Inizio_Dichiarazione_di_Intenti__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Inizio Dichiarazione di Intenti</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Declaration_intent_number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Numero dichiarazione di intenti da dover inserire manualmente.</inlineHelpText>
+        <label>Numero dichiarazione di intenti</label>
+        <length>128</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Declaration_of_intent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data della dichiarazione di intenti da dover inserire manualmente alla creazione dell&apos;account. Ricordarsi di modificarla quando è stato raggiunto il limite.</inlineHelpText>
+        <label>Dichiarazione di intenti valida fino al</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fa_Parte_dell_Unione_Europea__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( BillingCountry = &apos;Italy&apos; || BillingCountry = &apos;Italia&apos; || BillingCountry = &apos;Belgium&apos; ||  BillingCountry = &apos;Bulgaria&apos; || BillingCountry = &apos;Czech Republic&apos; || BillingCountry = &apos;Denmark&apos; || BillingCountry = &apos;Germany&apos; || BillingCountry = &apos;Estonia&apos; || BillingCountry = &apos;Ireland&apos; || BillingCountry = &apos;Greece&apos; || BillingCountry = &apos;Spain&apos; || BillingCountry = &apos;France&apos; || BillingCountry = &apos;Croatia&apos; || BillingCountry = &apos;Cyprus&apos; || BillingCountry = &apos;Latvia&apos; || BillingCountry = &apos;Lithuania&apos; || BillingCountry = &apos;Luxembourg&apos; || BillingCountry = &apos;Hungary&apos; || BillingCountry = &apos;Netherlands&apos; || BillingCountry = &apos;Austria&apos; || BillingCountry = &apos;Poland&apos; || BillingCountry = &apos;Portugal&apos; || BillingCountry = &apos;Romania&apos; || BillingCountry = &apos;Slovenia&apos; || BillingCountry = &apos;Slovakia&apos; || BillingCountry = &apos;Finland&apos; || BillingCountry = &apos;Sweden&apos;, &apos;SI&apos;, &apos;NO&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fa Parte dell&apos;Unione Europea</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fiscal_code__c</fullName>
+        <externalId>false</externalId>
+        <label>Codice Fiscale</label>
+        <length>128</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Id_Artmatica__c</fullName>
+        <externalId>true</externalId>
+        <label>Id Artmatica</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsPartner</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PEC__c</fullName>
+        <externalId>false</externalId>
+        <label>PEC</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P_Iva_C_F__c</fullName>
+        <externalId>false</externalId>
+        <label>P.Iva/C.F.</label>
+        <length>16</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Payment_terms__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Termini di pagamento applicati all&apos;account.</inlineHelpText>
+        <label>Termini di pagamento</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>000DFFM</fullName>
+                    <default>false</default>
+                    <label>DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>000DINR</fullName>
+                    <default>false</default>
+                    <label>DATE INVOICE RECEIPT​</label>
+                </value>
+                <value>
+                    <fullName>15 GG DATA FATTURA</fullName>
+                    <default>false</default>
+                    <label>15 GG DATA FATTURA</label>
+                </value>
+                <value>
+                    <fullName>15 DAYS INVOICE DATE​</fullName>
+                    <default>false</default>
+                    <label>15 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>030DF-IT</fullName>
+                    <default>false</default>
+                    <label>30 GG DATA FATTURA ​</label>
+                </value>
+                <value>
+                    <fullName>030DF-EN</fullName>
+                    <default>false</default>
+                    <label>30 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>030DFFM</fullName>
+                    <default>false</default>
+                    <label>30 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>030FM-EN</fullName>
+                    <default>false</default>
+                    <label>30 DAYS END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>045DF</fullName>
+                    <default>false</default>
+                    <label>45 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>045DF-EN</fullName>
+                    <default>false</default>
+                    <label>45 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>045FDDF</fullName>
+                    <default>false</default>
+                    <label>45 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>045FDDF-EN</fullName>
+                    <default>false</default>
+                    <label>45 DAYS INVOICE DATE END OF MONTH</label>
+                </value>
+                <value>
+                    <fullName>060DF</fullName>
+                    <default>false</default>
+                    <label>60 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>060DF-EN</fullName>
+                    <default>false</default>
+                    <label>60 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>060DFFM</fullName>
+                    <default>false</default>
+                    <label>60 GG DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>060DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>60 DAYS INVOICE DATE END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>075</fullName>
+                    <default>false</default>
+                    <label>75 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>075-EN</fullName>
+                    <default>false</default>
+                    <label>75 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>090df</fullName>
+                    <default>false</default>
+                    <label>90 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>090df-EN</fullName>
+                    <default>false</default>
+                    <label>90 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>090DFFM</fullName>
+                    <default>false</default>
+                    <label>90 GG DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>090FM-EN</fullName>
+                    <default>false</default>
+                    <label>90 DAYS END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>120DFFM</fullName>
+                    <default>false</default>
+                    <label>120 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>120DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>120 DAYS INVOICE DATE END OF MONTH</label>
+                </value>
+                <value>
+                    <fullName>270DFFM</fullName>
+                    <default>false</default>
+                    <label>270 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>270DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>270 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>COMP</fullName>
+                    <default>false</default>
+                    <label>In compensazione con fattura stornata​</label>
+                </value>
+                <value>
+                    <fullName>COMPENG</fullName>
+                    <default>false</default>
+                    <label>To be compensated with reversed invoice ​</label>
+                </value>
+                <value>
+                    <fullName>105DF</fullName>
+                    <default>false</default>
+                    <label>105 GG DATA FATTURA</label>
+                </value>
+                <value>
+                    <fullName>0 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>0 DF</label>
+                </value>
+                <value>
+                    <fullName>0 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>0 FMDF</label>
+                </value>
+                <value>
+                    <fullName>120 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>120 FMDF</label>
+                </value>
+                <value>
+                    <fullName>270 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>270 FMDF</label>
+                </value>
+                <value>
+                    <fullName>30 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30 DF</label>
+                </value>
+                <value>
+                    <fullName>30 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30 FMDF</label>
+                </value>
+                <value>
+                    <fullName>30/60 RD</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30/60 DFFM</label>
+                </value>
+                <value>
+                    <fullName>45 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>45 DF</label>
+                </value>
+                <value>
+                    <fullName>60 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>60 FMDF</label>
+                </value>
+                <value>
+                    <fullName>75 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>75 DF</label>
+                </value>
+                <value>
+                    <fullName>90 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>90 DF</label>
+                </value>
+                <value>
+                    <fullName>90 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>90 FMDF</label>
+                </value>
+                <value>
+                    <fullName>AVIST</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>A VISTA​</label>
+                </value>
+                <value>
+                    <fullName>TRATCED</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Trattenuta sul cedolino​</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Size__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Large &gt; 1B - Medium &gt; 50M -  Small &lt;= 50M</inlineHelpText>
+        <label>Size</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Large</fullName>
+                    <default>false</default>
+                    <label>Large</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Small</fullName>
+                    <default>false</default>
+                    <label>Small</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Supplier_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Codice Fornitore</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Nord-Ovest</fullName>
+                    <default>false</default>
+                    <label>Nord-Ovest</label>
+                </value>
+                <value>
+                    <fullName>Nord-Est</fullName>
+                    <default>false</default>
+                    <label>Nord-Est</label>
+                </value>
+                <value>
+                    <fullName>Centro-Sud</fullName>
+                    <default>false</default>
+                    <label>Centro-Sud</label>
+                </value>
+                <value>
+                    <fullName>Estero​</fullName>
+                    <default>false</default>
+                    <label>Estero​</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Tier</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VAT_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Codice IVA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                    <label>Aliquota 22%</label>
+                </value>
+                <value>
+                    <fullName>N060201</fullName>
+                    <default>false</default>
+                    <label>Aliquota 0% - Servizi art. 7ter – UE</label>
+                </value>
+                <value>
+                    <fullName>N020202</fullName>
+                    <default>false</default>
+                    <label>Aliquota 0% - Servizi art.7ter – extraUE</label>
+                </value>
+                <value>
+                    <fullName>0%</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>0%</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VAT_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Partita IVA</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <listViews>
+        <fullName>AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.INDUSTRY</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.INDUSTRY</field>
+            <operation>equals</operation>
+            <value>Food &amp; Beverage</value>
+        </filters>
+        <label>Tutti gli account</label>
+    </listViews>
+    <listViews>
+        <fullName>MyAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>Account personali</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Check_Parent_Account_and_Territory</fullName>
+        <active>false</active>
+        <description>Controlla che l&apos;Account non abbia una Società controllante per rendere obbligatoria la compilazione del campo Territorio</description>
+        <errorConditionFormula>Parent.Id   =  &apos;&apos;
+
+&amp;&amp;
+
+ISPICKVAL(Territory__c, &apos;&apos;)</errorConditionFormula>
+        <errorDisplayField>Territory__c</errorDisplayField>
+        <errorMessage>If the Parent Account field is empty, the Territory field must be filled in</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Controllo_P_IVA</fullName>
+        <active>true</active>
+        <description>Controllo sulla presenza della P. IVA per Account non Italiani</description>
+        <errorConditionFormula>ISPICKVAL( Territory__c , &apos;Estero&apos;) &amp;&amp;  VAT_number__c = &apos;&apos; &amp;&amp;  Fa_Parte_dell_Unione_Europea__c = &apos;SI&apos;</errorConditionFormula>
+        <errorDisplayField>VAT_number__c</errorDisplayField>
+        <errorMessage>La Partita Iva è Obbligatoria in caso di Account Esteri ed Europei</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Controllo_Territoy_e_Paese_Fatturazione</fullName>
+        <active>false</active>
+        <description>Controlla che il Paese di Fatturazione e Territory siano coerenti</description>
+        <errorConditionFormula>NOT(ISPICKVAL( BillingCountryCode, &apos;&apos;))
+
+&amp;&amp;
+
+
+(AND(ISPICKVAL( BillingCountryCode, &apos;IT&apos;),  ISPICKVAL( Territory__c , &apos;Estero​&apos;))
+
+||
+
+AND(NOT(ISPICKVAL( BillingCountryCode, &apos;IT&apos;)),  NOT(ISPICKVAL( Territory__c , &apos;Estero​&apos;))))</errorConditionFormula>
+        <errorDisplayField>Territory__c</errorDisplayField>
+        <errorMessage>Se il Paese di Fatturazione è Italia non è possibile selezionare Estero. Se il Paese di Fatturazione non è Italia si può selezionare solo Estero.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Presenza_Numero_Dichiarazione_Intenti</fullName>
+        <active>true</active>
+        <description>Se &quot;Dichiarazione di intenti valida fino al&quot; è compilato anche &quot;Numero Dichiarazione&quot; deve esserlo. Se  &quot;Numero Dichiarazione&quot; è compilato anche &quot;Dichiarazione di intenti valida fino al&quot; deve essere compilato</description>
+        <errorConditionFormula>NOT(ISBLANK(Declaration_of_intent__c))
+
+&amp;&amp;
+
+ISBLANK( Declaration_intent_number__c )
+
+||
+
+(ISBLANK(Declaration_of_intent__c)
+
+&amp;&amp;
+
+NOT(ISBLANK( Declaration_intent_number__c )))</errorConditionFormula>
+        <errorDisplayField>Declaration_of_intent__c</errorDisplayField>
+        <errorMessage>Se &quot;Dichiarazione di intenti valida fino al&quot; è compilato anche &quot;Numero Dichiarazione&quot; deve esserlo. Se  &quot;Numero Dichiarazione&quot; è compilato anche &quot;Dichiarazione di intenti valida fino al&quot; deve essere compilato</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_Pardot_Emails</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Engage Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__MicroCampaignPersonAccount</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_Single_Pardot_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Engage Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__MicroCampaignSinglePersonAccount</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_To_Prospect_Insight</fullName>
+        <availability>online</availability>
+        <description>Send this Person Account to Account Engagement</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send To Account Engagement</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__PardotAccountSendToPardot</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

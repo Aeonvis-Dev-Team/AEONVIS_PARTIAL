@@ -1,0 +1,267 @@
+
+private class listaresponse{
+	public List<responseTIC> res { get; set; }
+}
+
+private class responseTIC{
+	public string ragsoc { get; set; }
+	public string numtic { get; set; }
+	public string data { get; set; }
+	public Decimal totale { get; set; }
+	public string dettaglio { get; set; }
+	public string num { get; set; }
+}
+
+
+public class Doc{
+	public Documenti Documenti { get; set; }
+}
+
+public class Documenti{
+	public List<Documento> documento { get; set; }
+}
+
+public class Documento{
+	public string partitaivatic { get; set; }
+	public string tipodocumento { get; set; }
+	public string numero { get; set; }
+	public string serie { get; set; }
+	public string data { get; set; }
+	public string forgiu { get; set; }
+	public string ragionesociale { get; set; }
+	public string cognome { get; set; }
+	public string nome { get; set; }
+	public string idpaese { get; set; }
+	public string idcodice { get; set; }
+	public string codicefiscale { get; set; }
+	public string coddestinatario { get; set; }
+	public string pecdestinatario { get; set; }
+	public string indirizzo { get; set; }
+	public string numerocivico { get; set; }
+	public string cap { get; set; }
+	public string comune { get; set; }
+	public string provincia { get; set; }
+	public string nazione { get; set; }
+	public string telefono { get; set; }
+	public string email { get; set; }
+	public string stato { get; set; }
+	public string SDI { get; set; }
+	public string addebitaBollo { get; set; }
+	public decimal Bollo { get; set; }
+	public string IvaBollo { get; set; }
+	public decimal prezzoLordo { get; set; }
+	public List<scadenza> scadenze { get; set; }
+	public List<riga> righe { get; set; }
+}
+
+public class scadenza{
+	public string dataScadenza { get; set; }
+	public Decimal importoRata { get; set; }
+	public string tipoPagamento { get; set; }
+}
+
+
+public class riga{
+	public Integer numeroriga { get; set; }
+	public string codicearticolo { get; set; }
+	public string descrizioneart { get; set; }
+	public string descrizioneartsupp { get; set; }
+	public string codiva { get; set; }
+	public string unimis { get; set; }
+	public string quantita { get; set; }
+	public string prezzo { get; set; }
+	public string sconto1 { get; set; }
+	public string sconto2 { get; set; }
+}
+
+Doc Doc = new Doc();
+Documenti Docs = new Documenti();
+Documento doctosend = new Documento();
+List<Documento> listOfDoc = new List<Documento>();
+List<scadenza> scadenze = new List<scadenza>();
+List<riga> righe = new List<riga>();
+
+doctosend.partitaivatic = '11111111111';
+doctosend.tipodocumento = 'FA';
+doctosend.numero = '12';
+doctosend.serie = 'AA';
+doctosend.data = '16/06/2022';
+doctosend.forgiu = 'IND';
+doctosend.ragionesociale = 'Rossi Mario';
+doctosend.cognome = 'Rossi';
+doctosend.nome = 'Mario';
+doctosend.idpaese = 'IT';
+doctosend.idcodice = '11111111111';
+doctosend.codicefiscale = 'RSSMRA66T05L776P';
+doctosend.coddestinatario = '000000';
+doctosend.pecdestinatario = 'mario.rossi@emailpec.it';
+doctosend.indirizzo = 'Via Milano';
+doctosend.numerocivico = '5';
+doctosend.cap = '26900';
+doctosend.comune = 'Lodi';
+doctosend.provincia = 'LO';
+doctosend.nazione = 'IT';
+doctosend.telefono = '029001';
+doctosend.email = 'mario.rossi@email.it';
+doctosend.stato = '0';
+doctosend.SDI = '0';
+doctosend.addebitaBollo = '0';
+doctosend.Bollo = 0.00;
+doctosend.IvaBollo = 'N020101';
+doctosend.prezzoLordo = 0;
+
+scadenza scadenza = new scadenza();
+scadenza.dataScadenza = '16/06/2022';
+scadenza.importoRata = 1220.00;
+scadenza.tipoPagamento = 'TP02';
+
+scadenze.add(scadenza);
+doctosend.scadenze = scadenze;
+
+
+riga riga = new riga();
+
+riga.numeroriga = 10;
+riga.codicearticolo = '..';
+riga.descrizioneart = 'Prestazione numero 5 del 01/12/2021';
+riga.descrizioneartsupp = 'Esempio descrizione supplementare';
+riga.codiva = '22';
+riga.unimis = 'N';
+riga.quantita = '1';
+riga.prezzo = '1000.00';
+riga.sconto1 = '0';
+riga.sconto2 = '0';
+
+righe.add(riga);
+
+doctosend.righe = righe;
+
+listOfDoc.add(doctosend);
+
+Docs.documento = listOfDoc;
+Doc.Documenti = Docs;
+
+
+string jsonToSend = JSON.serialize(Doc, true);
+
+XMLSerializer serializer = new XMLSerializer();
+string jsonString = serializer.jsonToXML(jsonToSend);
+
+System.debug('jsonString --- ' + jsonString);
+
+Blob binaryData = Blob.valueOf(jsonString);
+        
+// Encode the Blob as a Base64 string
+String base64DocToSend = EncodingUtil.base64Encode(binaryData);
+
+suFimportDraftWsWs.su_fimport_draft_ws_Run_element Crede = new suFimportDraftWsWs.su_fimport_draft_ws_Run_element();
+
+Crede.m_UserName = 'emilio.ranzani@isi-it.eu_com';
+Crede.m_Password = 'DemoAeonvis24!';
+Crede.p_DocBase64 =  base64DocToSend;
+
+suFimportDraftWsWs.su_fimport_draft_wsWSPort call = new suFimportDraftWsWs.su_fimport_draft_wsWSPort();
+
+string aaa = call.su_fimport_draft_ws_Run(Crede.m_UserName,Crede.m_Password,'',Crede.p_DocBase64);
+
+System.debug(base64DocToSend);
+
+System.debug('RESPONSE --- ' + aaa);
+
+List<responseTIC> res = (List<responseTIC>) JSON.deserialize(aaa, List<responseTIC>.class);
+System.debug('RESPONSE DESERIALIZE --- ' + res[0]);
+
+responseTIC TIC = res[0];
+
+System.debug('RESPONSE ragsoc --- ' + TIC.ragsoc);
+System.debug('RESPONSE numtic --- ' + TIC.numtic);
+System.debug('RESPONSE data --- ' + TIC.data);
+System.debug('RESPONSE totale --- ' + TIC.totale);
+System.debug('RESPONSE dettaglio --- ' + TIC.dettaglio);
+System.debug('RESPONSE num --- ' + TIC.num);
+
+//public class StatusDoc {
+	//public StatusDocumenti Documenti { get; set; }
+//}
+
+//public class StatusDocumenti {
+	//public List<StatusDocumento> documento { get; set; }
+//}
+
+//public class StatusDocumento {
+	//public string tipodocumento { get; set; }
+	//public string numtic { get; set; }
+	//public string data { get; set; }
+	//public string ragionesociale { get; set; }
+//}
+
+//StatusDoc StatusDoc = new StatusDoc();
+//StatusDocumenti StatusDocumenti = new StatusDocumenti();
+//StatusDocumento docstatus = new StatusDocumento();
+//List<StatusDocumento> listOfStatusDoc = new List<StatusDocumento>();
+
+//docstatus.tipodocumento = 'FA';
+//docstatus.numtic = '12/AA';
+//docstatus.data = '16/06/2022';
+//docstatus.ragionesociale = 'Rossi Mario';
+
+//listOfStatusDoc.add(docstatus);
+
+//StatusDocumenti.documento = listOfStatusDoc;
+//StatusDoc.Documenti = StatusDocumenti;
+
+//string jsonToSendStatus = JSON.serialize(StatusDoc, true);
+
+//XMLSerializer serializer = new XMLSerializer();
+//string jsonStringStatus = serializer.jsonToXML(jsonToSendStatus);
+
+//System.debug('jsonString --- ' + jsonStringStatus);
+
+//Blob binaryDataStatus = Blob.valueOf(jsonStringStatus);
+//String base64DocToSend = EncodingUtil.base64Encode(binaryDataStatus);
+
+//suFgetdettDraftWsWs.su_fgetdett_draft_ws_Run_element CredGetStatus = new suFgetdettDraftWsWs.su_fgetdett_draft_ws_Run_element();
+//CredGetStatus.m_UserName = 'emilio.ranzani@isi-it.eu_com';
+//CredGetStatus.m_Password = 'DemoAeonvis24!';
+//CredGetStatus.p_ElencoBase64 = base64DocToSend;
+
+//suFgetdettDraftWsWs.su_fgetdett_draft_wsWSPort getStatus = new suFgetdettDraftWsWs.su_fgetdett_draft_wsWSPort();
+
+//string stato  = getStatus.su_fgetdett_draft_ws_Run(CredGetStatus.m_UserName,CredGetStatus.m_Password,'',CredGetStatus.p_ElencoBase64);
+
+//System.debug(base64DocToSend);
+//System.debug('RESPONSE --- ' + stato.replace('"[','[').replace(']"',']'));
+
+////Map<String, Object> res = (Map<String, Object>) JSON.deserializeUntyped(stato);
+//List<TICstructure.responseStatus> res = (List<TICstructure.responseStatus>) JSON.deserialize(stato.replace('"[','[').replace(']"',']'), List<TICstructure.responseStatus>.class);
+//////List<TICstructure.dettaglioStatus> dett = (List<TICstructure.dettaglioStatus>) JSON.deserialize(res[0].dettaglio, List<TICstructure.dettaglioStatus>.class);
+////System.debug('RESPONSE DESERIALIZE --- ' + JSON.deserializeStrict(stato, System.Type );
+////System.debug('RESPONSE DESERIALIZE --- ' + String.valueOf(res[0].dettaglio));
+
+
+
+////TICstructure.responseStatus TIC = res[0];
+
+////System.debug('RESPONSE ragsoc --- ' + TIC.ragsoc);
+////System.debug('RESPONSE numtic --- ' + TIC.numtic);
+////System.debug('RESPONSE data --- ' + TIC.data);
+////System.debug('RESPONSE totale --- ' + TIC.totale);
+////System.debug('RESPONSE Dettaglio --- ' + dett[0].data);
+////System.debug('RESPONSE Dettaglio --- ' + dett[0].stato);
+////System.debug('RESPONSE Dettaglio --- ' + dett[0].tipdoc);
+
+//List<Id> ids = new List<Id>();
+//ids.add('a01UA00000APCoEYAX');
+//TICApi.sendInvoiceTIC(ids);
+
+//BatchSincroStatiInvoice b = new BatchSincroStatiInvoice(); // Your batch class
+//database.executeBatch(b, 1);
+
+//List<Billing_Item__c> listBillingItems = [SELECT Id,Name,Invoice_status__c,Account__r.Company_name__c,Bill_with__c,TIC_draft_no__c,Data_Ordine__c,Billing_date__c,TIC_invoice_no__c,Opportunity__r.Name,Bill_to__r.Company_name__c FROM Billing_Item__c WHERE id = 'a01UA00000APCoEYAX'];
+
+//TICApi.retrieveStatusInvoice(listBillingItems);
+
+
+Datetime data = Date.today();
+
+System.debug(data.format('YY'));

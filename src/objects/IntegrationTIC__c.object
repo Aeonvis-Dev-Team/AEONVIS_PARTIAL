@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Impostazioni usate per l&apos;integrazione con sistema fatturazione TIC</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AbilitaCheckIVA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>AbilitaCheckIVA</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CodArtDescrittivo__c</fullName>
+        <description>Articolo usato per riga descrittiva</description>
+        <externalId>false</externalId>
+        <label>CodArtDescrittivo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endpoint__c</fullName>
+        <description>Endpoint del servizio</description>
+        <externalId>false</externalId>
+        <label>Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>P_IVA_Emittente__c</fullName>
+        <externalId>false</externalId>
+        <label>P IVA Emittente</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Password__c</fullName>
+        <externalId>false</externalId>
+        <label>Password</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serie_Est__c</fullName>
+        <description>Valore per la serie estera da inviare a TIC</description>
+        <externalId>false</externalId>
+        <label>Serie Est.</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serie_ITA__c</fullName>
+        <description>Valore per la serie italiana da inviare a TIC</description>
+        <externalId>false</externalId>
+        <label>Serie ITA</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stati_Finali__c</fullName>
+        <description>Stati finali per cui non richiedere piu gli stati</description>
+        <externalId>false</externalId>
+        <label>Stati Finali</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>UserName__c</fullName>
+        <externalId>false</externalId>
+        <label>UserName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>IntegrationTIC</label>
+    <visibility>Public</visibility>
+</CustomObject>

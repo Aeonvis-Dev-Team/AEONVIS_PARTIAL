@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Adobe Analytics</fullName>
+        <default>false</default>
+        <label>Adobe Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Board</fullName>
+        <default>false</default>
+        <label>Board</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Studio</fullName>
+        <default>false</default>
+        <label>Data Studio</label>
+    </customValue>
+    <customValue>
+        <fullName>Easy Fattura</fullName>
+        <default>false</default>
+        <label>Easy Fattura</label>
+    </customValue>
+    <customValue>
+        <fullName>Google Analytics</fullName>
+        <default>false</default>
+        <label>Google Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>HFM - Conso</fullName>
+        <default>false</default>
+        <label>HFM - Conso</label>
+    </customValue>
+    <customValue>
+        <fullName>IBP</fullName>
+        <default>false</default>
+        <label>IBP</label>
+    </customValue>
+    <customValue>
+        <fullName>JDA</fullName>
+        <default>false</default>
+        <label>JDA</label>
+    </customValue>
+    <customValue>
+        <fullName>Kinaxis</fullName>
+        <default>false</default>
+        <label>Kinaxis</label>
+    </customValue>
+    <customValue>
+        <fullName>Neptune</fullName>
+        <default>false</default>
+        <label>Neptune</label>
+    </customValue>
+    <customValue>
+        <fullName>Power BI</fullName>
+        <default>false</default>
+        <label>Power BI</label>
+    </customValue>
+    <customValue>
+        <fullName>Qlik Sense</fullName>
+        <default>false</default>
+        <label>Qlik Sense</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce</fullName>
+        <default>false</default>
+        <label>Salesforce</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP Business Objects</fullName>
+        <default>false</default>
+        <label>SAP Business Objects</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP Business One</fullName>
+        <default>false</default>
+        <label>SAP Business One</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP ECC</fullName>
+        <default>false</default>
+        <label>SAP ECC</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP RISE S/4 HANA PUBLIC</fullName>
+        <default>false</default>
+        <label>SAP RISE S/4 HANA PUBLIC</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP S/4 HANA OnPrem/Private</fullName>
+        <default>false</default>
+        <label>SAP S/4 HANA OnPrem/Private</label>
+    </customValue>
+    <customValue>
+        <fullName>Tableau</fullName>
+        <default>false</default>
+        <label>Tableau</label>
+    </customValue>
+    <customValue>
+        <fullName>NA</fullName>
+        <default>false</default>
+        <label>NA/Unknown/Other/Varie</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Varie</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Varie</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unknown</label>
+    </customValue>
+    <masterLabel>Platform</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

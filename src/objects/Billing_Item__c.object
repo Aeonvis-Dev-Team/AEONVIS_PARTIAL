@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Billing_Item_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Billing_Item_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Elementi del piano di fatturazione dell&apos;opportunity</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Billing Items</relationshipLabel>
+        <relationshipName>Billing_Items</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Accrual_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Accrual Year</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2020</fullName>
+                    <default>false</default>
+                    <label>2020</label>
+                </value>
+                <value>
+                    <fullName>2021</fullName>
+                    <default>false</default>
+                    <label>2021</label>
+                </value>
+                <value>
+                    <fullName>2022</fullName>
+                    <default>false</default>
+                    <label>2022</label>
+                </value>
+                <value>
+                    <fullName>2023</fullName>
+                    <default>false</default>
+                    <label>2023</label>
+                </value>
+                <value>
+                    <fullName>2024</fullName>
+                    <default>false</default>
+                    <label>2024</label>
+                </value>
+                <value>
+                    <fullName>2025</fullName>
+                    <default>false</default>
+                    <label>2025</label>
+                </value>
+                <value>
+                    <fullName>2026</fullName>
+                    <default>false</default>
+                    <label>2026</label>
+                </value>
+                <value>
+                    <fullName>2027</fullName>
+                    <default>false</default>
+                    <label>2027</label>
+                </value>
+                <value>
+                    <fullName>2028</fullName>
+                    <default>false</default>
+                    <label>2028</label>
+                </value>
+                <value>
+                    <fullName>2029</fullName>
+                    <default>false</default>
+                    <label>2029</label>
+                </value>
+                <value>
+                    <fullName>2030</fullName>
+                    <default>false</default>
+                    <label>2030</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Approval_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Approved_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Approved By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Billing_Items</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bill_to__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Address bill to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is empty will be filled automatically with the bill to account of the opportunity</inlineHelpText>
+        <label>Bill to</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Billing Items (Bill to)</relationshipLabel>
+        <relationshipName>Billing_item_bill_to</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bill_with__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Selezionare il billing item correlato per fatturarli nella medesima fattura.</inlineHelpText>
+        <label>Fatturare con</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 AND 2 AND 3 AND 4 AND 8 AND (5 OR 6 OR 7)</booleanFilter>
+            <filterItems>
+                <field>Billing_Item__c.Opportunity__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Opportunity__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Billing_Item__c.Bill_with__c</field>
+                <operation>equals</operation>
+                <value></value>
+            </filterItems>
+            <filterItems>
+                <field>Billing_Item__c.Name</field>
+                <operation>notContain</operation>
+                <value>Not Touch</value>
+            </filterItems>
+            <filterItems>
+                <field>Billing_Item__c.Id</field>
+                <operation>notEqual</operation>
+                <valueField>$Source.Id</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Billing_Item__c.Billing_status__c</field>
+                <operation>equals</operation>
+                <value>Approved</value>
+            </filterItems>
+            <filterItems>
+                <field>Billing_Item__c.Billing_status__c</field>
+                <operation>equals</operation>
+                <value>Invoice in progress</value>
+            </filterItems>
+            <filterItems>
+                <field>Billing_Item__c.Billing_status__c</field>
+                <operation>equals</operation>
+                <value>Invoiced</value>
+            </filterItems>
+            <filterItems>
+                <field>Billing_Item__c.Billing_expected_date__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Billing_expected_date__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Billing_Item__c</referenceTo>
+        <relationshipLabel>Billing Items</relationshipLabel>
+        <relationshipName>Billing_Items</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Item_ID__c</fullName>
+        <description>Auto incremental ID for billing item</description>
+        <displayFormat>Billing_{00000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Billing Item ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Billing_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Billing_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Fattura</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Billing_expected_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing expected date</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Billing_item_description_for_tic__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Descrizione aggiuntiva del billing item per inserire dettagli a favore del cliente. Es. costi per risorsa</inlineHelpText>
+        <label>Billing Item descrizione aggiuntiva TIC</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Billing_item_total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Billing_amount__c + Out_of_pocket_amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Importo totale del billing item da dover fatturare.</inlineHelpText>
+        <label>Totale Billing Item</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Billing_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing number</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>To be approved</fullName>
+                    <default>true</default>
+                    <label>To be approved</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Invoice in progress</fullName>
+                    <default>false</default>
+                    <label>Invoice in progress</label>
+                </value>
+                <value>
+                    <fullName>Invoiced</fullName>
+                    <default>false</default>
+                    <label>Invoiced</label>
+                </value>
+                <value>
+                    <fullName>Not to be invoiced</fullName>
+                    <default>false</default>
+                    <label>Not to be invoiced</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Da_Approvare__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Da Approvare</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Data_scadenza__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data calcolata automaticamente partendo dalla data di fattura e calcolando i giorni previsti nei termini di pagamento.</inlineHelpText>
+        <label>Data scadenza</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Editable__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Residual__c = true, IMAGE(&apos;https://aeonvis.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068R2000004YC1F&amp;operationContext=DELIVERY&amp;contentId=05TR20000064NRV&amp;page=0&amp;d=/a/R2000000tG4A/IwX1vuh0a0LY0D0_lz9aZbcTMz0yg4gtu4ImWqU8TjM&amp;oid=00DUA000001Kj0X&amp;dpt=null&amp;viewId=&apos;, &apos;Editable no&apos;, 10, 10), IMAGE(&apos;https://aeonvis.file.force.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068R2000004Xuyp&amp;operationContext=DELIVERY&amp;contentId=05TR20000064ygb&amp;page=0&amp;d=/a/R2000000tHjN/YF_rIKIhJA_rYVdVk8EQNeTGNxqhe9bp.1Q7Qx7lGxk&amp;oid=00DUA000001Kj0X&amp;dpt=null&amp;viewId=&apos;, &apos;Editable yes&apos;, 10, 10))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Editable</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_approvazione_cliente__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Autorizzato/Pre-Autorizzato</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Entrata_merci__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Informazione da inserire manualmente da parte dell&apos;amministrazione.</inlineHelpText>
+        <label>Entrata merci</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inviata_a_TIC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Inviata a TIC</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_filename__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Billing_status__c, 
+&quot;Invoiced&quot;, &quot;FT&quot; &amp;  RIGHT(TEXT(YEAR(Billing_date__c)), 2) &amp; &quot;_&quot; + LPAD(Billing_number__c,4,&apos;0&apos;) &amp; &quot;_&quot; &amp; LPAD(TEXT(DAY(Billing_date__c)),2,&apos;0&apos;) &amp; &quot;-&quot; &amp; LPAD(TEXT(MONTH(Billing_date__c)),2,&apos;0&apos;) &amp; &quot;-&quot; &amp; TEXT(YEAR(Billing_date__c)) &amp; &quot;_&quot; +  Account__r.Name ,
+&quot;&quot;
+)</formula>
+        <label>Invoice filename</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Stato della fattura riportata automaticamente da TIC.</inlineHelpText>
+        <label>Stato della Fattura</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoiced_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Invoiced By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Billing_Items1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Invoiced_timestamp__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoiced timestamp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Last_update_by_TIC__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data ultimo aggiornamento da parte di TIC.</inlineHelpText>
+        <label>Ultimo aggiornamento da TIC</label>
+        <length>120</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity ID</label>
+        <length>11</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <description>Opportunity of the Billing Item</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Billing Items</relationshipLabel>
+        <relationshipName>Billing_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Order_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Order Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Order_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Order_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Order Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Order_number__c</fullName>
+        <description>Order number of the opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Order number of the opportunity</inlineHelpText>
+        <label>Order number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Out_of_pocket_amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Spese sostenute in relazione al presente contratto, da fatturare con il presente billing item.</inlineHelpText>
+        <label>Spese di Trasferta</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Out_of_pocket_desc__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Dettagli relativi alle spese di trasferta sostenute in merito a questa commessa, da voler fatturare con il relativo billing item.</inlineHelpText>
+        <label>Descrizione spese di trasferta</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Payment_terms__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Termini di pagamento riportati automaticamente dall&apos;opportunità.</inlineHelpText>
+        <label>Termini di pagamento</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>000DFFM</fullName>
+                    <default>false</default>
+                    <label>DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>000DINR</fullName>
+                    <default>false</default>
+                    <label>DATE INVOICE RECEIPT​</label>
+                </value>
+                <value>
+                    <fullName>15 GG DATA FATTURA</fullName>
+                    <default>false</default>
+                    <label>15 GG DATA FATTURA</label>
+                </value>
+                <value>
+                    <fullName>15 DAYS INVOICE DATE​</fullName>
+                    <default>false</default>
+                    <label>15 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>030DF-IT</fullName>
+                    <default>false</default>
+                    <label>30 GG DATA FATTURA ​</label>
+                </value>
+                <value>
+                    <fullName>030DF-EN</fullName>
+                    <default>false</default>
+                    <label>30 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>030DFFM</fullName>
+                    <default>false</default>
+                    <label>30 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>030FM-EN</fullName>
+                    <default>false</default>
+                    <label>30 DAYS END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>045DF</fullName>
+                    <default>false</default>
+                    <label>45 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>045DF-EN</fullName>
+                    <default>false</default>
+                    <label>45 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>045FDDF</fullName>
+                    <default>false</default>
+                    <label>45 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>045FDDF-EN</fullName>
+                    <default>false</default>
+                    <label>45 DAYS INVOICE DATE END OF MONTH</label>
+                </value>
+                <value>
+                    <fullName>060DF</fullName>
+                    <default>false</default>
+                    <label>60 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>060DF-EN</fullName>
+                    <default>false</default>
+                    <label>60 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>060DFFM</fullName>
+                    <default>false</default>
+                    <label>60 GG DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>060DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>60 DAYS INVOICE DATE END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>075</fullName>
+                    <default>false</default>
+                    <label>75 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>075-EN</fullName>
+                    <default>false</default>
+                    <label>75 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>090df</fullName>
+                    <default>false</default>
+                    <label>90 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>090df-EN</fullName>
+                    <default>false</default>
+                    <label>90 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>090DFFM</fullName>
+                    <default>false</default>
+                    <label>90 GG DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>090FM-EN</fullName>
+                    <default>false</default>
+                    <label>90 DAYS END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>120DFFM</fullName>
+                    <default>false</default>
+                    <label>120 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>120DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>120 DAYS INVOICE DATE END OF MONTH</label>
+                </value>
+                <value>
+                    <fullName>270DFFM</fullName>
+                    <default>false</default>
+                    <label>270 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>270DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>270 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>COMP</fullName>
+                    <default>false</default>
+                    <label>In compensazione con fattura stornata​</label>
+                </value>
+                <value>
+                    <fullName>COMPENG</fullName>
+                    <default>false</default>
+                    <label>To be compensated with reversed invoice</label>
+                </value>
+                <value>
+                    <fullName>105DF</fullName>
+                    <default>false</default>
+                    <label>105 GG DATA FATTURA</label>
+                </value>
+                <value>
+                    <fullName>0 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>0 DF</label>
+                </value>
+                <value>
+                    <fullName>0 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>0 FMDF</label>
+                </value>
+                <value>
+                    <fullName>120 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>120 FMDF</label>
+                </value>
+                <value>
+                    <fullName>270 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>270 FMDF</label>
+                </value>
+                <value>
+                    <fullName>30 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30 DF</label>
+                </value>
+                <value>
+                    <fullName>30 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30 FMDF</label>
+                </value>
+                <value>
+                    <fullName>30/60 RD</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30/60 DFFM​</label>
+                </value>
+                <value>
+                    <fullName>45 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>45 DF</label>
+                </value>
+                <value>
+                    <fullName>60 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>60 FMDF</label>
+                </value>
+                <value>
+                    <fullName>75 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>75 DF</label>
+                </value>
+                <value>
+                    <fullName>90 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>90 DF</label>
+                </value>
+                <value>
+                    <fullName>90 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>90 FMDF</label>
+                </value>
+                <value>
+                    <fullName>AVIST</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>A VISTA​</label>
+                </value>
+                <value>
+                    <fullName>In compensazione con fattura stornata​</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>In compensazione con fattura stornata​</label>
+                </value>
+                <value>
+                    <fullName>To be compensated with reversed invoice</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>To be compensated with reversed invoice</label>
+                </value>
+                <value>
+                    <fullName>TRATCED</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Trattenuta sul cedolino​</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Percent__c</fullName>
+        <externalId>false</externalId>
+        <label>Percent</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Residual__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Residual</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TIC_draft_no__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Numero della bozza che viene aggiornato automaticamente da TIC.</inlineHelpText>
+        <label>Numero Bozza TIC</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TIC_invoice_no__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Numero della fattura che viene aggiornato automaticamente da TIC.</inlineHelpText>
+        <label>Numero Fattura TIC</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR_opportunity__c</fullName>
+        <description>TR project ID dell&apos;opportunity</description>
+        <externalId>false</externalId>
+        <label>TR project ID opportunity</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tecnical_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tecnical Status</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tic_Invoice_Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Data riportata automaticamente da TIC.</inlineHelpText>
+        <label>Data Creazione Fatt. Tic</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>VAT_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>L&apos;aliquota IVA viene inserita nel momento in cui il billing item viene spostato in Invoice in progress, tenendo conto delle informazioni presenti nell&apos;account.</inlineHelpText>
+        <label>Codice IVA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                    <label>Aliquota 22%</label>
+                </value>
+                <value>
+                    <fullName>N030201</fullName>
+                    <default>false</default>
+                    <label>Non imp. Art.8 c.1. lett.c. (esp.indir.lett.intento)</label>
+                </value>
+                <value>
+                    <fullName>N060201</fullName>
+                    <default>false</default>
+                    <label>Aliquota 0% - Servizi art. 7ter – UE</label>
+                </value>
+                <value>
+                    <fullName>N020202</fullName>
+                    <default>false</default>
+                    <label>Aliquota 0% - Servizi art.7ter – extraUE</label>
+                </value>
+                <value>
+                    <fullName>0%</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>0%</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Validit_dichiarazione_di_intenti__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Account__r.Declaration_of_intent__c) ,
+IMAGE(&quot;/img/samples/color_green.gif&quot;, &quot;green&quot;, 30, 30) ,
+
+IMAGE(&quot;/img/samples/color_red.gif&quot;, &quot;red&quot;, 30, 30))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>ROSSO: L&apos;account a cui si fatturerà questo billing item ha la dichiarazione di intenti valida, avrà &quot;Non imp. Art.8 c.1. lett.c. (esp.indir.lett.intento)&quot;
+VERDE: L&apos;account a cui si fatturerà questo item non ha la dichiarazione di intenti, se Italiano avrà IVA 22% altrimenti 0%.</inlineHelpText>
+        <label>Validità dichiarazione di intenti</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Billing Item</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Billing_Item_ID__c</columns>
+        <columns>Account__c</columns>
+        <columns>Opportunity_ID__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Order_number__c</columns>
+        <columns>NAME</columns>
+        <columns>Billing_status__c</columns>
+        <columns>Billing_date__c</columns>
+        <columns>Billing_number__c</columns>
+        <columns>Billing_amount__c</columns>
+        <columns>Out_of_pocket_amount__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Copy_of_Amministraz_Items_invoiced</fullName>
+        <columns>Account__c</columns>
+        <columns>Bill_to__c</columns>
+        <columns>Opportunity_ID__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Order_Amount__c</columns>
+        <columns>TR_opportunity__c</columns>
+        <columns>Billing_amount__c</columns>
+        <columns>Order_number__c</columns>
+        <columns>NAME</columns>
+        <columns>Out_of_pocket_amount__c</columns>
+        <columns>Billing_number__c</columns>
+        <columns>Billing_date__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Billing_status__c</columns>
+        <columns>Accrual_Year__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Billing_status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>equals</operation>
+            <value>arena</value>
+        </filters>
+        <label>Amministraz - Items invoiced</label>
+    </listViews>
+    <listViews>
+        <fullName>Current_billing_items_approved</fullName>
+        <columns>Account__c</columns>
+        <columns>Bill_to__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>NAME</columns>
+        <columns>Opportunity_ID__c</columns>
+        <columns>Billing_amount__c</columns>
+        <columns>Out_of_pocket_amount__c</columns>
+        <columns>TR_opportunity__c</columns>
+        <columns>Order_number__c</columns>
+        <columns>Billing_expected_date__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Billing_status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Billing_status__c</field>
+            <operation>equals</operation>
+            <value>To be approved,Approved,Invoice in progress</value>
+        </filters>
+        <filters>
+            <field>Billing_expected_date__c</field>
+            <operation>lessOrEqual</operation>
+            <value>9/30/2024</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notContain</operation>
+            <value>Not Touch</value>
+        </filters>
+        <filters>
+            <field>Approved_By__c</field>
+            <operation>notEqual</operation>
+            <value>benedetto virzi,aristide nettuno,serena selvarolo,tommaso santini,giacomo d&apos;ippolito</value>
+        </filters>
+        <label>Amministraz - Items to be invoiced</label>
+    </listViews>
+    <listViews>
+        <fullName>Current_month_billing_items</fullName>
+        <columns>Account__c</columns>
+        <columns>Bill_to__c</columns>
+        <columns>Opportunity_ID__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Order_number__c</columns>
+        <columns>NAME</columns>
+        <columns>Billing_amount__c</columns>
+        <columns>Out_of_pocket_amount__c</columns>
+        <columns>Billing_expected_date__c</columns>
+        <columns>Billing_status__c</columns>
+        <columns>Accrual_Year__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Billing_expected_date__c</field>
+            <operation>lessThan</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <filters>
+            <field>Billing_status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <label>Current month billing items ToBeInvoiced</label>
+    </listViews>
+    <listViews>
+        <fullName>My_billing_items_invoiced</fullName>
+        <columns>Account__c</columns>
+        <columns>Bill_to__c</columns>
+        <columns>Opportunity_ID__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Order_number__c</columns>
+        <columns>NAME</columns>
+        <columns>Billing_amount__c</columns>
+        <columns>Billing_expected_date__c</columns>
+        <columns>Billing_status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Billing_status__c</field>
+            <operation>equals</operation>
+            <value>Invoice in progress,Invoiced</value>
+        </filters>
+        <label>My billing items invoiced</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportunity_Billing_Item_plan</fullName>
+        <booleanFilter>1 or 2 or 3</booleanFilter>
+        <columns>Account__c</columns>
+        <columns>Opportunity_ID__c</columns>
+        <columns>Billing_status__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>NAME</columns>
+        <columns>Order_number__c</columns>
+        <columns>Billing_number__c</columns>
+        <columns>Billing_amount__c</columns>
+        <columns>Out_of_pocket_amount__c</columns>
+        <columns>Billing_expected_date__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Billing_expected_date__c</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>Billing_date__c</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>Billing_expected_date__c</field>
+            <operation>equals</operation>
+            <value>LAST_YEAR</value>
+        </filters>
+        <label>Opportunity Billing Item plan</label>
+    </listViews>
+    <nameField>
+        <label>Billing Item Name for TIC</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Billing Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Amount_change_onlyif_tobeapproved</fullName>
+        <active>true</active>
+        <description>L&apos;amount del billing item può essere modificato solo se lo stato è to be approved</description>
+        <errorConditionFormula>ISCHANGED( Billing_amount__c) &amp;&amp;
+ Residual__c = false &amp;&amp;
+OR( 
+(NOT(ISCHANGED( Billing_status__c)) &amp;&amp; NOT(ISPICKVAL( Billing_status__c , &apos;To be approved&apos;) )),
+ISCHANGED( Billing_status__c) &amp;&amp;  ISPICKVAL( PRIORVALUE(Billing_status__c) , &apos;To be approved&apos;)
+
+)</errorConditionFormula>
+        <errorDisplayField>Billing_amount__c</errorDisplayField>
+        <errorMessage>You can only change Billing amount of a billing item in status &quot;To be approved&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Approve_validation</fullName>
+        <active>false</active>
+        <description>Non si può approvare un billing item se è cambiato il relativo amount o se il billing plan è aperto</description>
+        <errorConditionFormula>AND (
+ISCHANGED( Billing_status__c ),
+ISPICKVAL(Billing_status__c , &apos;Approved&apos;),
+OR(ISPICKVAL(Opportunity__r.Billin_Plan_Status__c, &apos;Open&apos;), ISBLANK(TEXT(Opportunity__r.Billin_Plan_Status__c))),
+ISPICKVAL(PRIORVALUE(Billing_status__c ), &quot;To be approved&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Billing_status__c</errorDisplayField>
+        <errorMessage>You can&apos;t approve a billing item if the opportunity billing status is open or if you changed the amount of the billing item</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Approve_validation_billto</fullName>
+        <active>false</active>
+        <description>Non si può approvare un billing item se il bill to è vuoto o non è legato all&apos;account commerciale</description>
+        <errorConditionFormula>AND (
+ISCHANGED( Billing_status__c ),
+ISPICKVAL(Billing_status__c , &apos;Approved&apos;),
+OR( ISBLANK( Bill_to__r.Id ),
+    AND( Bill_to__r.Id &lt;&gt;  Account__r.Id ,  Bill_to__r.ParentId &lt;&gt; Account__r.Id)),
+ISPICKVAL(PRIORVALUE(Billing_status__c ), &quot;To be approved&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Bill_to__c</errorDisplayField>
+        <errorMessage>You can&apos;t approve a billing item if the bill to account is empty or bill to account is not equal or related to commercial account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Approve_validation_billto_NEW</fullName>
+        <active>false</active>
+        <description>Non si puo approvare un billing item se il contractor non è &apos;Aeonvis&apos; e il &apos;Bill to&apos; non è lo stesso del contractor. 
+Non si può approvare un billing item se il bill to è vuoto o non è legato all&apos;account commerciale</description>
+        <errorConditionFormula>IF(Opportunity__r.Partner__r.Name != &apos;Aeonvis&apos;,
+AND(ISCHANGED( Billing_status__c ), ISPICKVAL(Billing_status__c , &apos;Approved&apos;), Opportunity__r.Partner__r.Name != &apos;Aeonvis&apos;, Bill_to__c != Opportunity__r.Partner__c),
+
+(AND
+(ISCHANGED( Billing_status__c ),
+ISPICKVAL(Billing_status__c , &apos;Approved&apos;),
+OR( ISBLANK( Bill_to__r.Id ),
+AND( Bill_to__r.Id &lt;&gt; Account__r.Id , Bill_to__r.ParentId &lt;&gt; Account__r.Id)
+),
+ISPICKVAL(PRIORVALUE(Billing_status__c ), &quot;To be approved&quot;)
+)
+)
+)</errorConditionFormula>
+        <errorDisplayField>Bill_to__c</errorDisplayField>
+        <errorMessage>If the contractor is not aeonvis the bill to must be the same as the contractor or You can&apos;t approve a billing item if the bill to account is empty or bill to account is not equal or related to commercial account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BillingNumber_billingDate_onlyIfApproved</fullName>
+        <active>false</active>
+        <description>Billing number e billing date possono essere compilati solo se stato billing item è approvato o invoice in progress</description>
+        <errorConditionFormula>AND(
+OR(
+ISPICKVAL( Billing_status__c , &apos;To be approved&apos;),
+ISPICKVAL( Billing_status__c , &apos;Not to be invoiced&apos;)
+),
+OR(
+NOT(ISNULL( Billing_date__c )), NOT( ISBLANK(  Billing_number__c  ))
+)
+)</errorConditionFormula>
+        <errorDisplayField>Billing_date__c</errorDisplayField>
+        <errorMessage>You can&apos;t fill Billing number or Billing date if the item is in status &quot;To be approved&quot; or &quot;Not to be invoiced&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BillingNumber_billingDate_required</fullName>
+        <active>true</active>
+        <description>Se inserito il billing number, il billing date deve essere obbligatorio e viceversa</description>
+        <errorConditionFormula>(OR(
+AND( NOT(ISBLANK( Billing_number__c )), ISBLANK( Billing_date__c )),
+AND( NOT(ISBLANK( Billing_date__c )), ISBLANK( Billing_number__c ))
+))
+
+&amp;&amp;
+
+ Billing_amount__c &lt; 0</errorConditionFormula>
+        <errorDisplayField>Billing_number__c</errorDisplayField>
+        <errorMessage>Billing date and billing number are both required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_Year_when_approved</fullName>
+        <active>false</active>
+        <description>The field Accrual Year must be filled in order to approve a billing item.</description>
+        <errorConditionFormula>AND(ISPICKVAL(Billing_status__c, &quot;Approved&quot;),  ISPICKVAL( Accrual_Year__c,&quot;&quot;))</errorConditionFormula>
+        <errorDisplayField>Accrual_Year__c</errorDisplayField>
+        <errorMessage>Accrual Year is mandatory when Billing Status is &quot;Approved&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_expected_date_from_today</fullName>
+        <active>false</active>
+        <description>Billing extected date deve essere uguale o maggiore della data odierna</description>
+        <errorConditionFormula>NOT(ISPICKVAL(Opportunity__r.Engagement_Type__c, &apos;T&amp;M&apos;))
+
+&amp;&amp;
+
+AND(
+OR(
+ISPICKVAL( Billing_status__c, &apos;To be approved&apos;) ,
+ISPICKVAL( Billing_status__c, &apos;Approved&apos;)
+),
+Billing_expected_date__c &lt; (TODAY() -10)
+)</errorConditionFormula>
+        <errorDisplayField>Billing_expected_date__c</errorDisplayField>
+        <errorMessage>Billing expected date can&apos;t be earlier than 10 days ago</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billto_change_onlyif_tobeapproved</fullName>
+        <active>true</active>
+        <description>Il Bill to del billing item può essere modificato solo se lo stato è to be approved o se sta per passare in approved</description>
+        <errorConditionFormula>ISCHANGED(  Bill_to__c ) &amp;&amp;
+OR(
+AND(NOT(ISCHANGED(Billing_status__c)), NOT(ISPICKVAL( Billing_status__c , &apos;To be approved&apos;))),
+AND(ISCHANGED(  Billing_status__c ),NOT(ISPICKVAL(Billing_status__c ,&apos;Approved&apos;)))
+)</errorConditionFormula>
+        <errorDisplayField>Bill_to__c</errorDisplayField>
+        <errorMessage>You can only change Bill to account of a billing item in status &quot;To be approved&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Blocco_Cambio_Stato</fullName>
+        <active>false</active>
+        <description>Regola che blocca il cambio di stato per le operazioni di rilascio della Fatturazione TIC</description>
+        <errorConditionFormula>ISCHANGED( Billing_status__c )</errorConditionFormula>
+        <errorMessage>Non è possibile modificare lo status del Record. Attendere la fine delle operazioni di rilascio della Fatturazione con TIC.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Caratteri_speciali_descrizione_TIC</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+CONTAINS(Billing_item_description_for_tic__c,&quot;&amp;&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;&lt;&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;&gt;&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;€&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;©&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;®&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;À&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Á&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Â&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ã&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ä&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Å&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Æ&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ç&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;È&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;É&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ê&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ë&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ì&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Í&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Î&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ï&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ð&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ñ&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ò&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ó&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ò&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ô&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Õ&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ö&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;×&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ø&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ù&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ú&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Û&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ü&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Ý&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;Þ&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ß&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;à&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;á&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;â&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ã&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ä&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;å&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;æ&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ç&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;è&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;é&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ê&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ë&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ì&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;í&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;î&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ï&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ð&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ñ&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ò&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ó&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ô&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;õ&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ö&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;÷&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ø&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ù&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ú&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;û&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ü&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;ý&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;þ&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&apos;&quot;&apos;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;&apos;&quot;),
+CONTAINS(Billing_item_description_for_tic__c,&quot;$&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Billing_item_description_for_tic__c</errorDisplayField>
+        <errorMessage>Il campo non può contenere caratteri speciali (esempio: €, &amp;, &lt;, &gt;, $, &apos; ,&quot;)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Caratteri_speciali_descrizione_spese</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+CONTAINS( Out_of_pocket_desc__c ,&quot;&amp;&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;&lt;&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;&gt;&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;€&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;©&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;®&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;À&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Á&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Â&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ã&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ä&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Å&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Æ&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ç&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;È&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;É&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ê&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ë&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ì&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Í&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Î&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ï&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ð&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ñ&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ò&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ó&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ò&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ô&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Õ&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ö&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;×&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ø&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ù&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ú&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Û&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ü&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Ý&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;Þ&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ß&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;à&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;á&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;â&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ã&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ä&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;å&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;æ&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ç&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;è&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;é&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ê&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ë&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ì&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;í&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;î&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ï&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ð&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ñ&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ò&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ó&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ô&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;õ&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ö&quot;),
+
+CONTAINS(Out_of_pocket_desc__c ,&quot;÷&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ø&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ù&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ú&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;û&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ü&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;ý&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;þ&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&apos;&quot;&apos;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;&apos;&quot;),
+CONTAINS(Out_of_pocket_desc__c ,&quot;$&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Out_of_pocket_desc__c</errorDisplayField>
+        <errorMessage>Il campo non può contenere caratteri speciali (esempio: €, &amp;, &lt;, &gt;, $, &apos; ,&quot;)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Caratteri_speciali_nome</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+CONTAINS( Name ,&quot;&amp;&quot;),
+CONTAINS(Name ,&quot;&lt;&quot;),
+CONTAINS(Name ,&quot;&gt;&quot;),
+CONTAINS(Name ,&quot;€&quot;),
+CONTAINS(Name ,&quot;©&quot;),
+CONTAINS(Name ,&quot;®&quot;),
+CONTAINS(Name ,&quot;À&quot;),
+CONTAINS(Name ,&quot;Á&quot;),
+CONTAINS(Name ,&quot;Â&quot;),
+CONTAINS(Name ,&quot;Ã&quot;),
+CONTAINS(Name ,&quot;Ä&quot;),
+CONTAINS(Name ,&quot;Å&quot;),
+CONTAINS(Name ,&quot;Æ&quot;),
+CONTAINS(Name ,&quot;Ç&quot;),
+CONTAINS(Name ,&quot;È&quot;),
+CONTAINS(Name ,&quot;É&quot;),
+CONTAINS(Name ,&quot;Ê&quot;),
+CONTAINS(Name ,&quot;Ë&quot;),
+CONTAINS(Name ,&quot;Ì&quot;),
+CONTAINS(Name ,&quot;Í&quot;),
+CONTAINS(Name ,&quot;Î&quot;),
+CONTAINS(Name ,&quot;Ï&quot;),
+CONTAINS(Name ,&quot;Ð&quot;),
+CONTAINS(Name ,&quot;Ñ&quot;),
+CONTAINS(Name ,&quot;Ò&quot;),
+CONTAINS(Name ,&quot;Ó&quot;),
+CONTAINS(Name ,&quot;Ò&quot;),
+CONTAINS(Name ,&quot;Ô&quot;),
+CONTAINS(Name ,&quot;Õ&quot;),
+CONTAINS(Name ,&quot;Ö&quot;),
+CONTAINS(Name ,&quot;×&quot;),
+CONTAINS(Name ,&quot;Ø&quot;),
+CONTAINS(Name ,&quot;Ù&quot;),
+CONTAINS(Name ,&quot;Ú&quot;),
+CONTAINS(Name ,&quot;Û&quot;),
+CONTAINS(Name ,&quot;Ü&quot;),
+CONTAINS(Name ,&quot;Ý&quot;),
+CONTAINS(Name ,&quot;Þ&quot;),
+CONTAINS(Name ,&quot;ß&quot;),
+CONTAINS(Name ,&quot;à&quot;),
+CONTAINS(Name ,&quot;á&quot;),
+CONTAINS(Name ,&quot;â&quot;),
+CONTAINS(Name ,&quot;ã&quot;),
+CONTAINS(Name ,&quot;ä&quot;),
+CONTAINS(Name ,&quot;å&quot;),
+CONTAINS(Name ,&quot;æ&quot;),
+CONTAINS(Name ,&quot;ç&quot;),
+CONTAINS(Name ,&quot;è&quot;),
+CONTAINS(Name ,&quot;é&quot;),
+CONTAINS(Name ,&quot;ê&quot;),
+CONTAINS(Name ,&quot;ë&quot;),
+CONTAINS(Name ,&quot;ì&quot;),
+CONTAINS(Name ,&quot;í&quot;),
+CONTAINS(Name ,&quot;î&quot;),
+CONTAINS(Name ,&quot;ï&quot;),
+CONTAINS(Name ,&quot;ð&quot;),
+CONTAINS(Name ,&quot;ñ&quot;),
+CONTAINS(Name ,&quot;ò&quot;),
+CONTAINS(Name ,&quot;ó&quot;),
+CONTAINS(Name ,&quot;ô&quot;),
+CONTAINS(Name ,&quot;õ&quot;),
+CONTAINS(Name ,&quot;ö&quot;),
+
+CONTAINS(Name ,&quot;÷&quot;),
+CONTAINS(Name ,&quot;ø&quot;),
+CONTAINS(Name ,&quot;ù&quot;),
+CONTAINS(Name ,&quot;ú&quot;),
+CONTAINS(Name ,&quot;û&quot;),
+CONTAINS(Name ,&quot;ü&quot;),
+CONTAINS(Name ,&quot;ý&quot;),
+CONTAINS(Name ,&quot;þ&quot;),
+CONTAINS(Name ,&apos;&quot;&apos;),
+CONTAINS(Name ,&quot;&apos;&quot;),
+CONTAINS(Name ,&quot;$&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Il campo non può contenere caratteri speciali (esempio: €, &amp;, &lt;, &gt;, $, &apos; ,&quot;)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Controllo_Tecnical_Status</fullName>
+        <active>true</active>
+        <description>Non permette il cambio di Stato del Billing Items in maniera manuale</description>
+        <errorConditionFormula>Tecnical_Status__c = false 
+
+&amp;&amp;
+
+ISCHANGED(Billing_status__c )</errorConditionFormula>
+        <errorMessage>Non è possibile modificare lo Stato del Billing Item in maniera manuale. Utilizzare l&apos;apposito pulsante presente nel Record che si vuole aggiornare.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Create_to_be_approved_only</fullName>
+        <active>true</active>
+        <description>Billing items must be created in status to be approved and then update their status in order to be compliant with the process and checks</description>
+        <errorConditionFormula>AND( ISNEW() , NOT(ISPICKVAL(Billing_status__c, &quot;To be approved&quot;)),  Residual__c = false)</errorConditionFormula>
+        <errorDisplayField>Billing_status__c</errorDisplayField>
+        <errorMessage>You can only create billing item in status To be approved. You can update status after creation</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Expecteddate_change_onlyif_tobeapproved</fullName>
+        <active>true</active>
+        <description>La billing expected date del billing item può essere modificato solo se lo stato è to be approved</description>
+        <errorConditionFormula>ISCHANGED( Billing_expected_date__c ) &amp;&amp; 
+ Residual__c = false &amp;&amp;
+OR( 
+(NOT(ISCHANGED( Billing_status__c)) &amp;&amp; NOT(ISPICKVAL( Billing_status__c , &apos;To be approved&apos;) )), 
+ISCHANGED( Billing_status__c) &amp;&amp; ISPICKVAL( PRIORVALUE(Billing_status__c) , &apos;To be approved&apos;) 
+
+)</errorConditionFormula>
+        <errorDisplayField>Billing_expected_date__c</errorDisplayField>
+        <errorMessage>You can&apos;t change Billing Expected date of a billing item in status different from &quot;To be approved&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lunghezza_caratteri_descrizione_TIC</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEN( Billing_item_description_for_tic__c )&gt;80</errorConditionFormula>
+        <errorDisplayField>Billing_item_description_for_tic__c</errorDisplayField>
+        <errorMessage>La lunghezza del testo deve essere di 80 caratteri</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lunghezza_caratteri_descrizione_spese</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEN( Out_of_pocket_desc__c )&gt;80</errorConditionFormula>
+        <errorDisplayField>Out_of_pocket_desc__c</errorDisplayField>
+        <errorMessage>La lunghezza del testo deve essere di 80 caratteri</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_amout_required_for_percentage</fullName>
+        <active>true</active>
+        <description>In caso di compilazione percentuale, è necessario che l&apos;order amount dell&apos;opportunity sia compilato</description>
+        <errorConditionFormula>AND(
+   ISNULL(Opportunity__r.Order_Amount__c),
+ NOT(ISNULL( Percent__c   ) )
+)</errorConditionFormula>
+        <errorDisplayField>Percent__c</errorDisplayField>
+        <errorMessage>Insert order amount in the opportunity in order to calculate percentage</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Percent_Or_Amount_Required</fullName>
+        <active>true</active>
+        <description>Percent or amount are required</description>
+        <errorConditionFormula>ISBLANK(Percent__c) &amp;&amp; ISBLANK(Billing_amount__c)</errorConditionFormula>
+        <errorMessage>Percent or amount are required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Residual_Status</fullName>
+        <active>true</active>
+        <description>Impedisce che il Residuo cambi stato</description>
+        <errorConditionFormula>Residual__c = true
+
+&amp;&amp; 
+
+Not( ISPICKVAL( Billing_status__c , &apos;To be approved&apos;) )</errorConditionFormula>
+        <errorDisplayField>Billing_status__c</errorDisplayField>
+        <errorMessage>This Billing Item must stay in Status = To be approved</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Status_Invoiced_NumberAndDate_Not_Blank</fullName>
+        <active>true</active>
+        <description>Per cambiare lo status in &quot;Invoiced&quot; devono esserci il billing number e il billing date</description>
+        <errorConditionFormula>ISPICKVAL( Billing_status__c , &apos;Invoiced&apos;) &amp;&amp; (ISBLANK(  Billing_number__c  ) || ISBLANK( Billing_date__c ))</errorConditionFormula>
+        <errorMessage>Billing number and date are required to change the status in invoiced</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Status_change_validation</fullName>
+        <active>false</active>
+        <description>Lo stato del billing item non può mai decrescere e il Not to be invoiced non può mai essere mobificato</description>
+        <errorConditionFormula>ISCHANGED(Billing_status__c) &amp;&amp; (
+	OR(
+		AND (ISPICKVAL(PRIORVALUE(Billing_status__c), &quot;Approved&quot;), ISPICKVAL(Billing_status__c , &quot;To be approved&quot;)),
+		AND (ISPICKVAL(PRIORVALUE(Billing_status__c), &quot;Invoice in progress&quot;), OR (ISPICKVAL(Billing_status__c , &quot;To be approved&quot;), ISPICKVAL(Billing_status__c , &quot;Approved&quot;))),
+		ISPICKVAL(PRIORVALUE(Billing_status__c), &quot;Invoiced&quot;),
+(ISPICKVAL(PRIORVALUE(Billing_status__c), &quot;Not to be invoiced&quot;)
+)
+)
+)</errorConditionFormula>
+        <errorDisplayField>Billing_status__c</errorDisplayField>
+        <errorMessage>You can&apos;t downgrade billing item status and you can&apos;t change the status of a &quot;Not to be invoiced&quot; item</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Status_notToBeInv_only_from_toBeAppr</fullName>
+        <active>false</active>
+        <description>Lo stato del billing item può diventare Not to be invoiced solo se lo stato precedente era To be approved</description>
+        <errorConditionFormula>AND (
+ISCHANGED(Billing_status__c), 
+NOT(ISPICKVAL(PRIORVALUE(Billing_status__c), &quot;To be approved&quot;)), ISPICKVAL(Billing_status__c , &quot;Not to be invoiced&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Billing_status__c</errorDisplayField>
+        <errorMessage>Only item in &quot;To be approved&quot; status can be changed in &quot;Not to be invoiced&quot;</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

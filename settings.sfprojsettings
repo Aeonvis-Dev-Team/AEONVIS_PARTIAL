@@ -1,0 +1,31 @@
+{
+  "CodeMapPerProject": {
+    "collapsedPanels": [
+      "SendOpportunityToAP",
+      "DataFactory",
+      "TestOppoCustomIntegration",
+      "ContrattoCustom",
+      "TICApi",
+      "OppoCustomIntegration",
+      "TICApiHelper",
+      "Test_TICApi",
+      "Test_OpenApi",
+      "BatchSincroStatiInvoice",
+      "BatchSincroStatiInvoice2"
+    ]
+  },
+  "SObjectEditorProject": {
+    "collapsedEditors": [],
+    "expandedEditors": [],
+    "collapsedGlobalEditors": [],
+    "expandedGlobalEditors": []
+  },
+  "FlsProfileFilterSettings": {
+    "WorkingSet": [],
+    "IsConfigured": false
+  },
+  "SettingsVersion": 1,
+  "PackageXmlDialogSettings": {
+    "PullAfterConfigProjMetadataComponents": false
+  }
+}

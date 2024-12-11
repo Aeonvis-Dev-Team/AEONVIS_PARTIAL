@@ -1,0 +1,2280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b1af5270-0c09-4b10-a7d5-4c9f431d290f}</ProjectGuid>
+    <ApexVersion>50.0</ApexVersion>
+    <Name>AEONVIS_PARTIAL</Name>
+    <AssemblyName>AEONVIS_PARTIAL</AssemblyName>
+    <RootNamespace>AEONVIS_PARTIAL</RootNamespace>
+    <ProjectVersion>6</ProjectVersion>
+    <PackageVersion>1.34.4.4</PackageVersion>
+    <SyncOption>False</SyncOption>
+    <AntSupport>True</AntSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Folder Include="AnonymousApex" />
+    <Folder Include="classes\" />
+    <Folder Include="classes\IntegrazioneAP" />
+    <Folder Include="classes\IntegrazioneAP\API" />
+    <Folder Include="classes\Integrazione TIC" />
+    <Folder Include="components\" />
+    <Folder Include="flows\" />
+    <Folder Include="globalValueSets\" />
+    <Folder Include="lwc\" />
+    <Folder Include="lwc\throwToastMessage\" />
+    <Folder Include="objects\" />
+    <Folder Include="pages\" />
+    <Folder Include="Soql" />
+    <Folder Include="staticresources\" />
+    <Folder Include="staticresources\SiteSamples\" />
+    <Folder Include="staticresources\SiteSamples\img\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\css\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\serviceNotAvailable\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\tooManyRequests\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\themes\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\0b9f2b1a68\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\0b9f2b1a68\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\1e52f7ca3b\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\1e52f7ca3b\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\369197585e\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\369197585e\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\4438ce1aaa\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\4438ce1aaa\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\5fee7f1e62\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\5fee7f1e62\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\64fa4ed513\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\64fa4ed513\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\6550c72670\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\6550c72670\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\680f1058f9\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\680f1058f9\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\6f9fa1dd9d\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\6f9fa1dd9d\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\70e88ceef7\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\70e88ceef7\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\751ffe6072\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\751ffe6072\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\825be97188\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\825be97188\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\84ebcbaeab\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\84ebcbaeab\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8976612ec4\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8976612ec4\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8a89c48cb8\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8a89c48cb8\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\90ded6deeb\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\90ded6deeb\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\929a9551fe\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\929a9551fe\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\98698c76aa\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\98698c76aa\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\aec3b38fec\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\aec3b38fec\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\c87ab0b57c\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\c87ab0b57c\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\d0e8fe2700\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\d0e8fe2700\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\f61a3aea29\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\f61a3aea29\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\f678edda9b\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\f678edda9b\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\template_html\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\template_html\42fa84e2f6\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\template_html\42fa84e2f6\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4530a01ad84333b9130152c1fa4c64f2\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4530a01ad84333b9130152c1fa4c64f2\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4530a01ad84333b9130152c1fa4c64f2\prod\en_US\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4652e18f152d34c36e724b9c9f71e50d\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4652e18f152d34c36e724b9c9f71e50d\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4652e18f152d34c36e724b9c9f71e50d\prod\en_US\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\633b3f51e6122c9bf1d30c0975f360d5\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\633b3f51e6122c9bf1d30c0975f360d5\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\633b3f51e6122c9bf1d30c0975f360d5\prod\en_US\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\72802f2528b23c03238f20a8fa5273cc\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\72802f2528b23c03238f20a8fa5273cc\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\72802f2528b23c03238f20a8fa5273cc\prod\en_US\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\88e2a50425b8a7ad7457c65c753f3207\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\88e2a50425b8a7ad7457c65c753f3207\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\88e2a50425b8a7ad7457c65c753f3207\prod\en_US\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\aac6cc7591ef7223a3bf55a6469d599a\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\aac6cc7591ef7223a3bf55a6469d599a\prod\" />
+    <Folder Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\aac6cc7591ef7223a3bf55a6469d599a\prod\en_US\" />
+    <Folder Include="triggers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\BatchSincroStatiInvoice.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\BatchSincroStatiInvoice.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\BatchSincroStatiInvoice2.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\BatchSincroStatiInvoice2.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\ChangePasswordController.cls">
+      <PhysicalRelativePath>src\classes\ChangePasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ChangePasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLandingController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLandingControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLoginController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLoginControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegConfirmController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegConfirmControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CustomLog.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\CustomLog.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\DataFactory.cls">
+      <PhysicalRelativePath>src\classes\DataFactory.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ForgotPasswordController.cls">
+      <PhysicalRelativePath>src\classes\ForgotPasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ForgotPasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ForgotPasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MicrobatchSelfRegController.cls">
+      <PhysicalRelativePath>src\classes\MicrobatchSelfRegController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MicrobatchSelfRegControllerTest.cls">
+      <PhysicalRelativePath>src\classes\MicrobatchSelfRegControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MockHttpResponseGenerator.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\MockHttpResponseGenerator.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\MyProfilePageController.cls">
+      <PhysicalRelativePath>src\classes\MyProfilePageController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MyProfilePageControllerTest.cls">
+      <PhysicalRelativePath>src\classes\MyProfilePageControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\OpenApi.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\OpenApi.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\OpenApiHelper.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\OpenApiHelper.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\OpenApiStructure.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\OpenApiStructure.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\OppoCustomIntegration.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\OppoCustomIntegration.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\OppoIntegrationStructure.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\OppoIntegrationStructure.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\opportunityTriggerSupport.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\opportunityTriggerSupport.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SchedulableBatchSincroStatiInvoice.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SchedulableBatchSincroStatiInvoice.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SendOpportunityToAP.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SendOpportunityToAP.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SetFileVisibility.cls">
+      <PhysicalRelativePath>src\classes\SetFileVisibility.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SetFileVisibilityTriggerSupport.cls">
+      <PhysicalRelativePath>src\classes\SetFileVisibilityTriggerSupport.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteLoginController.cls">
+      <PhysicalRelativePath>src\classes\SiteLoginController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteLoginControllerTest.cls">
+      <PhysicalRelativePath>src\classes\SiteLoginControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteRegisterController.cls">
+      <PhysicalRelativePath>src\classes\SiteRegisterController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteRegisterControllerTest.cls">
+      <PhysicalRelativePath>src\classes\SiteRegisterControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\TestOppoCustomIntegration.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\TestOppoCustomIntegration.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\TestSetFileVisibility.cls">
+      <PhysicalRelativePath>src\classes\TestSetFileVisibility.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\Test_OpenApi.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\Test_OpenApi.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\Test_TICApi.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\Test_TICApi.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\TICApi.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\TICApi.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\TICApiHelper.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\TICApiHelper.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\TICstructure.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\TICstructure.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\XMLDom.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\XMLDom.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\XMLDom_Test.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\XMLDom_Test.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\XMLSerializer.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\XMLSerializer.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\XMLSerializer_Test.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\XMLSerializer_Test.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="components\SiteFooter.component">
+      <PhysicalRelativePath>src\components\SiteFooter.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SiteHeader.component">
+      <PhysicalRelativePath>src\components\SiteHeader.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SiteLogin.component">
+      <PhysicalRelativePath>src\components\SiteLogin.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SitePoweredBy.component">
+      <PhysicalRelativePath>src\components\SitePoweredBy.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lwc\throwToastMessage\throwToastMessage.html">
+      <PhysicalRelativePath>src\lwc\throwToastMessage\throwToastMessage.html</PhysicalRelativePath>
+      <SubType>LightningComponentBundle</SubType>
+      <BundleName>throwToastMessage</BundleName>
+    </Compile>
+    <Compile Include="lwc\throwToastMessage\throwToastMessage.js">
+      <PhysicalRelativePath>src\lwc\throwToastMessage\throwToastMessage.js</PhysicalRelativePath>
+      <SubType>LightningComponentBundle</SubType>
+      <BundleName>throwToastMessage</BundleName>
+    </Compile>
+    <Compile Include="pages\AnswersHome.page">
+      <PhysicalRelativePath>src\pages\AnswersHome.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\BandwidthExceeded.page">
+      <PhysicalRelativePath>src\pages\BandwidthExceeded.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ChangePassword.page">
+      <PhysicalRelativePath>src\pages\ChangePassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesLanding.page">
+      <PhysicalRelativePath>src\pages\CommunitiesLanding.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesLogin.page">
+      <PhysicalRelativePath>src\pages\CommunitiesLogin.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesSelfReg.page">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfReg.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesSelfRegConfirm.page">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfRegConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesTemplate.page">
+      <PhysicalRelativePath>src\pages\CommunitiesTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\Exception.page">
+      <PhysicalRelativePath>src\pages\Exception.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\FileNotFound.page">
+      <PhysicalRelativePath>src\pages\FileNotFound.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ForgotPassword.page">
+      <PhysicalRelativePath>src\pages\ForgotPassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ForgotPasswordConfirm.page">
+      <PhysicalRelativePath>src\pages\ForgotPasswordConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\IdeasHome.page">
+      <PhysicalRelativePath>src\pages\IdeasHome.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\InMaintenance.page">
+      <PhysicalRelativePath>src\pages\InMaintenance.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\MicrobatchSelfReg.page">
+      <PhysicalRelativePath>src\pages\MicrobatchSelfReg.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\MyProfilePage.page">
+      <PhysicalRelativePath>src\pages\MyProfilePage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteLogin.page">
+      <PhysicalRelativePath>src\pages\SiteLogin.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteRegister.page">
+      <PhysicalRelativePath>src\pages\SiteRegister.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteRegisterConfirm.page">
+      <PhysicalRelativePath>src\pages\SiteRegisterConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteTemplate.page">
+      <PhysicalRelativePath>src\pages\SiteTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\StdExceptionTemplate.page">
+      <PhysicalRelativePath>src\pages\StdExceptionTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\Unauthorized.page">
+      <PhysicalRelativePath>src\pages\Unauthorized.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\UnderConstruction.page">
+      <PhysicalRelativePath>src\pages\UnderConstruction.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="triggers\opportunityTrigger.trigger">
+      <SubType>Trigger</SubType>
+      <PhysicalRelativePath>src\triggers\opportunityTrigger.trigger</PhysicalRelativePath>
+      <MetadataType>ApexTrigger</MetadataType>
+    </Compile>
+    <Compile Include="triggers\SetFileVisibilityTrigger.trigger">
+      <PhysicalRelativePath>src\triggers\SetFileVisibilityTrigger.trigger</PhysicalRelativePath>
+      <SubType>Trigger</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="flows\Aggionra_Ammontare_su_Residuo_al_cambio_dell_ammontare_su_Opportunit.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Aggionra_Ammontare_su_Residuo_al_cambio_dell_ammontare_su_Opportunit.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Aggiornamento_Amount_su_Residual_Capacity.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Aggiornamento_Amount_su_Residual_Capacity.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Aggiornamento_Amount_su_Residuo_quando_un_Billing_Items_Viene_Eliminato.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Aggiornamento_Amount_su_Residuo_quando_un_Billing_Items_Viene_Eliminato.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Aggiorna_Billing_Item_con_Opportunit_Senza_Ordine.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Aggiorna_Billing_Item_con_Opportunit_Senza_Ordine.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Aggiorna_Termini_di_Pagamento_su_Opportunit.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Aggiorna_Termini_di_Pagamento_su_Opportunit.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Aggiorna_Territory_con_quello_della_Societ_Controllante.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Aggiorna_Territory_con_quello_della_Societ_Controllante.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Billing_Account.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Billing_Account.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Billing_info_update.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Billing_info_update.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Billing_plan_status_update.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Billing_plan_status_update.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Billing_status_Approved.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Billing_status_Approved.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Billing_status_Invoiced.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Billing_status_Invoiced.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Bill_to_autocompile.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Bill_to_autocompile.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Blocco_Eliminazione_Residuo.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Blocco_Eliminazione_Residuo.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Calcolo_Opportunity_ID.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Calcolo_Opportunity_ID.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Change_Status_Billing_Item.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Change_Status_Billing_Item.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Compilazione_e_Controllo_SDI.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Compilazione_e_Controllo_SDI.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Creazione_nuovi_progetti_TR.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Creazione_nuovi_progetti_TR.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Creazione_Residual_Capacity_per_Opportunit_T_M.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Creazione_Residual_Capacity_per_Opportunit_T_M.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\fairu__AutoSetAllowDuplucates.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\fairu__AutoSetAllowDuplucates.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\fairu__AutoSetComponentVisible.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\fairu__AutoSetComponentVisible.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\fairu__AutoSetKeyFieldApiName.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\fairu__AutoSetKeyFieldApiName.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\fairu__AutoSetKeyFieldApiNameFromChild.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\fairu__AutoSetKeyFieldApiNameFromChild.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Fattura_Modifica_Stato_Billing_Item.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Fattura_Modifica_Stato_Billing_Item.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Nota_di_Credito_Modifica_Stato_Billing_Item.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Nota_di_Credito_Modifica_Stato_Billing_Item.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\pi__Account_Engagement_Bulk_Asset_Copy_Flow.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\pi__Account_Engagement_Bulk_Asset_Copy_Flow.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\pi__Account_Engagement_Sandbox_Production_Bulk_Asset_Copy_Flow.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\pi__Account_Engagement_Sandbox_Production_Bulk_Asset_Copy_Flow.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Quality_review_info.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Quality_review_info.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Send_Invoice_To_TIC.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Send_Invoice_To_TIC.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="flows\Validit_Partita_IVA.flow">
+      <SubType>Flow</SubType>
+      <PhysicalRelativePath>src\flows\Validit_Partita_IVA.flow</PhysicalRelativePath>
+      <MetadataType>Flow</MetadataType>
+    </Object>
+    <Object Include="globalValueSets\Platform.globalValueSet">
+      <SubType>GlobalValueSet</SubType>
+      <PhysicalRelativePath>src\globalValueSets\Platform.globalValueSet</PhysicalRelativePath>
+      <MetadataType>GlobalValueSet</MetadataType>
+    </Object>
+    <Object Include="objects\Account.object">
+      <PhysicalRelativePath>src\objects\Account.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountBrand.object">
+      <PhysicalRelativePath>src\objects\AccountBrand.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountContactRelation.object">
+      <PhysicalRelativePath>src\objects\AccountContactRelation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountContactRole.object">
+      <PhysicalRelativePath>src\objects\AccountContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Activity.object">
+      <PhysicalRelativePath>src\objects\Activity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Address.object">
+      <PhysicalRelativePath>src\objects\Address.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AiEvalCopilotTestCaseRslt.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\AiEvalCopilotTestCaseRslt.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\AiEvalTestCaseCritRslt.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\AiEvalTestCaseCritRslt.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\AiEvalTestCaseResult.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\AiEvalTestCaseResult.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\AiEvaluation.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\AiEvaluation.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\AiPromptBuilderGenResult.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\AiPromptBuilderGenResult.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Asset.object">
+      <PhysicalRelativePath>src\objects\Asset.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssetRelationship.object">
+      <PhysicalRelativePath>src\objects\AssetRelationship.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssistantProgress.object">
+      <PhysicalRelativePath>src\objects\AssistantProgress.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssociatedLocation.object">
+      <PhysicalRelativePath>src\objects\AssociatedLocation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AuditTrailFileExport.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\AuditTrailFileExport.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\AuthorizationForm.object">
+      <PhysicalRelativePath>src\objects\AuthorizationForm.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AuthorizationFormConsent.object">
+      <PhysicalRelativePath>src\objects\AuthorizationFormConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AuthorizationFormDataUse.object">
+      <PhysicalRelativePath>src\objects\AuthorizationFormDataUse.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AuthorizationFormText.object">
+      <PhysicalRelativePath>src\objects\AuthorizationFormText.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\BatchJob.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\BatchJob.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\BatchJobPart.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\BatchJobPart.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\BatchJobPartFailedRecord.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\BatchJobPartFailedRecord.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\BD_Cost_Charge__c.object">
+      <PhysicalRelativePath>src\objects\BD_Cost_Charge__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Billing_Item__c.object">
+      <PhysicalRelativePath>src\objects\Billing_Item__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\BusinessBrand.object">
+      <PhysicalRelativePath>src\objects\BusinessBrand.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CalcMatrixColumnRange.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalcMatrixColumnRange.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalcProcStepRelationship.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalcProcStepRelationship.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalculationMatrix.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalculationMatrix.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalculationMatrixColumn.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalculationMatrixColumn.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalculationMatrixRow.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalculationMatrixRow.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalculationMatrixVersion.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalculationMatrixVersion.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalculationProcedure.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalculationProcedure.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalculationProcedureStep.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalculationProcedureStep.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalculationProcedureVariable.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalculationProcedureVariable.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\CalculationProcedureVersion.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\CalculationProcedureVersion.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Campaign.object">
+      <PhysicalRelativePath>src\objects\Campaign.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CampaignInfluence.object">
+      <PhysicalRelativePath>src\objects\CampaignInfluence.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CampaignMember.object">
+      <PhysicalRelativePath>src\objects\CampaignMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Case.object">
+      <PhysicalRelativePath>src\objects\Case.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CaseContactRole.object">
+      <PhysicalRelativePath>src\objects\CaseContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CaseMilestone.object">
+      <PhysicalRelativePath>src\objects\CaseMilestone.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChannelProgram.object">
+      <PhysicalRelativePath>src\objects\ChannelProgram.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChannelProgramLevel.object">
+      <PhysicalRelativePath>src\objects\ChannelProgramLevel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChannelProgramMember.object">
+      <PhysicalRelativePath>src\objects\ChannelProgramMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChatterActivity.object">
+      <PhysicalRelativePath>src\objects\ChatterActivity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroup.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroup.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroupMember.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroupMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CommSubscription.object">
+      <PhysicalRelativePath>src\objects\CommSubscription.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CommSubscriptionChannelType.object">
+      <PhysicalRelativePath>src\objects\CommSubscriptionChannelType.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CommSubscriptionConsent.object">
+      <PhysicalRelativePath>src\objects\CommSubscriptionConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CommSubscriptionTiming.object">
+      <PhysicalRelativePath>src\objects\CommSubscriptionTiming.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contact.object">
+      <PhysicalRelativePath>src\objects\Contact.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointAddress.object">
+      <PhysicalRelativePath>src\objects\ContactPointAddress.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointConsent.object">
+      <PhysicalRelativePath>src\objects\ContactPointConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointEmail.object">
+      <PhysicalRelativePath>src\objects\ContactPointEmail.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointPhone.object">
+      <PhysicalRelativePath>src\objects\ContactPointPhone.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointTypeConsent.object">
+      <PhysicalRelativePath>src\objects\ContactPointTypeConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactRequest.object">
+      <PhysicalRelativePath>src\objects\ContactRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContentVersion.object">
+      <PhysicalRelativePath>src\objects\ContentVersion.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contract.object">
+      <PhysicalRelativePath>src\objects\Contract.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContractContactRole.object">
+      <PhysicalRelativePath>src\objects\ContractContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContractLineItem.object">
+      <PhysicalRelativePath>src\objects\ContractLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Customer.object">
+      <PhysicalRelativePath>src\objects\Customer.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DataUseLegalBasis.object">
+      <PhysicalRelativePath>src\objects\DataUseLegalBasis.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DataUsePurpose.object">
+      <PhysicalRelativePath>src\objects\DataUsePurpose.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DecisionTblFileImportData.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\DecisionTblFileImportData.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\DelegatedAccount.object">
+      <PhysicalRelativePath>src\objects\DelegatedAccount.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DTRecordsetReplica.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\DTRecordsetReplica.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\DuplicateRecordItem.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordSet.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordSet.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EmailMessage.object">
+      <PhysicalRelativePath>src\objects\EmailMessage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EmailNewTRProject__c.object">
+      <PhysicalRelativePath>src\objects\EmailNewTRProject__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EmpUserProvisionProcessErr.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\EmpUserProvisionProcessErr.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\EngagementAttendee.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\EngagementAttendee.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\EngagementChannelType.object">
+      <PhysicalRelativePath>src\objects\EngagementChannelType.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EngagementInteraction.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\EngagementInteraction.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\EngagementInterface.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\EngagementInterface.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\EngagementTopic.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\EngagementTopic.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Entitlement.object">
+      <PhysicalRelativePath>src\objects\Entitlement.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EntitlementContact.object">
+      <PhysicalRelativePath>src\objects\EntitlementContact.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Event.object">
+      <PhysicalRelativePath>src\objects\Event.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExchangeUserMapping.object">
+      <PhysicalRelativePath>src\objects\ExchangeUserMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExpressionFilter.object">
+      <PhysicalRelativePath>src\objects\ExpressionFilter.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExpressionFilterCriteria.object">
+      <PhysicalRelativePath>src\objects\ExpressionFilterCriteria.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExpressionSet.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\ExpressionSet.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\ExpressionSetVersion.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\ExpressionSetVersion.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\ExternalEventMapping.object">
+      <PhysicalRelativePath>src\objects\ExternalEventMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FeedItem.object">
+      <PhysicalRelativePath>src\objects\FeedItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FlowOrchestrationInstance.object">
+      <PhysicalRelativePath>src\objects\FlowOrchestrationInstance.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FlowOrchestrationLog.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\FlowOrchestrationLog.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\FlowOrchestrationStageInstance.object">
+      <PhysicalRelativePath>src\objects\FlowOrchestrationStageInstance.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FlowOrchestrationStepInstance.object">
+      <PhysicalRelativePath>src\objects\FlowOrchestrationStepInstance.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FlowOrchestrationWorkItem.object">
+      <PhysicalRelativePath>src\objects\FlowOrchestrationWorkItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingAdjustment.object">
+      <PhysicalRelativePath>src\objects\ForecastingAdjustment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingCategoryMapping.object">
+      <PhysicalRelativePath>src\objects\ForecastingCategoryMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingCustomData.object">
+      <PhysicalRelativePath>src\objects\ForecastingCustomData.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingOwnerAdjustment.object">
+      <PhysicalRelativePath>src\objects\ForecastingOwnerAdjustment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingQuota.object">
+      <PhysicalRelativePath>src\objects\ForecastingQuota.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingTypeToCategory.object">
+      <PhysicalRelativePath>src\objects\ForecastingTypeToCategory.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Idea.object">
+      <PhysicalRelativePath>src\objects\Idea.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Image.object">
+      <PhysicalRelativePath>src\objects\Image.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ImpTrigger__c.object">
+      <PhysicalRelativePath>src\objects\ImpTrigger__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Individual.object">
+      <PhysicalRelativePath>src\objects\Individual.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\IntegrationProviderAttr.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\IntegrationProviderAttr.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\IntegrationProviderDef.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\IntegrationProviderDef.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\IntegrationTIC__c.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\IntegrationTIC__c.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Lead.object">
+      <PhysicalRelativePath>src\objects\Lead.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Location.object">
+      <PhysicalRelativePath>src\objects\Location.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\LocationTrustMeasure.object">
+      <PhysicalRelativePath>src\objects\LocationTrustMeasure.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\LoginIntegrazioneAP__c.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\LoginIntegrazioneAP__c.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Macro.object">
+      <PhysicalRelativePath>src\objects\Macro.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroAction.object">
+      <PhysicalRelativePath>src\objects\MacroAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroInstruction.object">
+      <PhysicalRelativePath>src\objects\MacroInstruction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroUsage.object">
+      <PhysicalRelativePath>src\objects\MacroUsage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\NetworkMember.object">
+      <PhysicalRelativePath>src\objects\NetworkMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\NetworkMemberChunk.object">
+      <PhysicalRelativePath>src\objects\NetworkMemberChunk.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpenAPI__c.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\OpenAPI__c.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Opportunity.object">
+      <PhysicalRelativePath>src\objects\Opportunity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityCompetitor.object">
+      <PhysicalRelativePath>src\objects\OpportunityCompetitor.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityContactRole.object">
+      <PhysicalRelativePath>src\objects\OpportunityContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityLineItem.object">
+      <PhysicalRelativePath>src\objects\OpportunityLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityRelatedDeleteLog.object">
+      <PhysicalRelativePath>src\objects\OpportunityRelatedDeleteLog.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Order.object">
+      <PhysicalRelativePath>src\objects\Order.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrderItem.object">
+      <PhysicalRelativePath>src\objects\OrderItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrgMetricScanResult.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\OrgMetricScanResult.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\OrgMetricScanSummary.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\OrgMetricScanSummary.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\PartnerRole.object">
+      <PhysicalRelativePath>src\objects\PartnerRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartyConsent.object">
+      <PhysicalRelativePath>src\objects\PartyConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Pricebook2.object">
+      <PhysicalRelativePath>src\objects\Pricebook2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PricebookEntry.object">
+      <PhysicalRelativePath>src\objects\PricebookEntry.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProcessException.object">
+      <PhysicalRelativePath>src\objects\ProcessException.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Product2.object">
+      <PhysicalRelativePath>src\objects\Product2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProfileSkill.object">
+      <PhysicalRelativePath>src\objects\ProfileSkill.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProfileSkillEndorsement.object">
+      <PhysicalRelativePath>src\objects\ProfileSkillEndorsement.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProfileSkillUser.object">
+      <PhysicalRelativePath>src\objects\ProfileSkillUser.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Project_Manager__c.object">
+      <PhysicalRelativePath>src\objects\Project_Manager__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PromptAction.object">
+      <PhysicalRelativePath>src\objects\PromptAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PromptError.object">
+      <PhysicalRelativePath>src\objects\PromptError.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Quality_review__c.object">
+      <PhysicalRelativePath>src\objects\Quality_review__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuickText.object">
+      <PhysicalRelativePath>src\objects\QuickText.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuickTextUsage.object">
+      <PhysicalRelativePath>src\objects\QuickTextUsage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Quote.object">
+      <PhysicalRelativePath>src\objects\Quote.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuoteLineItem.object">
+      <PhysicalRelativePath>src\objects\QuoteLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Recommendation.object">
+      <PhysicalRelativePath>src\objects\Recommendation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RecordAction.object">
+      <PhysicalRelativePath>src\objects\RecordAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RecordActnSelItemExtrc.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\RecordActnSelItemExtrc.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\RecordAlert.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\RecordAlert.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\RecordMergeHistory.object">
+      <PhysicalRelativePath>src\objects\RecordMergeHistory.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Scorecard.object">
+      <PhysicalRelativePath>src\objects\Scorecard.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardAssociation.object">
+      <PhysicalRelativePath>src\objects\ScorecardAssociation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardMetric.object">
+      <PhysicalRelativePath>src\objects\ScorecardMetric.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Seller.object">
+      <PhysicalRelativePath>src\objects\Seller.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ServiceContract.object">
+      <PhysicalRelativePath>src\objects\ServiceContract.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\SetupDataSynchronization.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\SetupDataSynchronization.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\SharingRecordCollection.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\SharingRecordCollection.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\SharingRecordCollectionItem.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\SharingRecordCollectionItem.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\SharingRecordCollectionMember.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\SharingRecordCollectionMember.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Site.object">
+      <PhysicalRelativePath>src\objects\Site.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\SocialPersona.object">
+      <PhysicalRelativePath>src\objects\SocialPersona.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Solution.object">
+      <PhysicalRelativePath>src\objects\Solution.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamActivityAccess.object">
+      <PhysicalRelativePath>src\objects\StreamActivityAccess.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamingChannel.object">
+      <PhysicalRelativePath>src\objects\StreamingChannel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\TableauHostMapping.object">
+      <PhysicalRelativePath>src\objects\TableauHostMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Task.object">
+      <PhysicalRelativePath>src\objects\Task.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\TIC_Custom_Log__c.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\TIC_Custom_Log__c.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Topic.object">
+      <PhysicalRelativePath>src\objects\Topic.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\TopicAssignment.object">
+      <PhysicalRelativePath>src\objects\TopicAssignment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\User.object">
+      <PhysicalRelativePath>src\objects\User.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\UserCapabilityPreference.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\UserCapabilityPreference.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\UserExternalCredential.object">
+      <PhysicalRelativePath>src\objects\UserExternalCredential.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\UserLocalWebServerIdentity.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\UserLocalWebServerIdentity.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\UserPrioritizedRecord.object">
+      <PhysicalRelativePath>src\objects\UserPrioritizedRecord.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\UserProvisioningRequest.object">
+      <PhysicalRelativePath>src\objects\UserProvisioningRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\VideoCall.object">
+      <PhysicalRelativePath>src\objects\VideoCall.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\VideoCallParticipant.object">
+      <PhysicalRelativePath>src\objects\VideoCallParticipant.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\VideoCallRecording.object">
+      <PhysicalRelativePath>src\objects\VideoCallRecording.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\VoiceCall.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\VoiceCall.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\WorkBadge.object">
+      <PhysicalRelativePath>src\objects\WorkBadge.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\WorkBadgeDefinition.object">
+      <PhysicalRelativePath>src\objects\WorkBadgeDefinition.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\WorkThanks.object">
+      <PhysicalRelativePath>src\objects\WorkThanks.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZipItem Include="staticresources\SiteSamples\img\clock.png">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\clock.png</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\clock.png</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\construction.png">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\construction.png</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\construction.png</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\force_logo.png">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\force_logo.png</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\force_logo.png</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\maintenance.png">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\maintenance.png</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\maintenance.png</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\poweredby.png">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\poweredby.png</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\poweredby.png</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\tools.png">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\tools.png</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\tools.png</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\unauthorized.png">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\unauthorized.png</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\unauthorized.png</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\warning.png">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\warning.png</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\warning.png</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\SiteStyles.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SiteSamples\SiteStyles.css</PhysicalRelativePath>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\SiteStyles.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\css\fonts-and-custom.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\css\fonts-and-custom.css</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\css\fonts-and-custom.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Bold.woff2">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Bold.woff2</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Bold.woff2</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Light.woff2">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Light.woff2</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Light.woff2</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Light.woff2">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Light.woff2</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Light.woff2</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Regular.woff2">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Regular.woff2</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\fonts\webfonts\SalesforceSans-Regular.woff2</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\serviceNotAvailable\serviceNotAvailable.svg">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\serviceNotAvailable\serviceNotAvailable.svg</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\serviceNotAvailable\serviceNotAvailable.svg</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\tooManyRequests\tooManyRequests.svg">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\tooManyRequests\tooManyRequests.svg</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\Images\tooManyRequests\tooManyRequests.svg</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\desert.svg">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\desert.svg</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\desert.svg</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\imagePlaceholder.svg">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\imagePlaceholder.svg</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\imagePlaceholder.svg</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\playFilled.svg">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\playFilled.svg</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\playFilled.svg</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\serviceNotAvailable.svg">
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\serviceNotAvailable.svg</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\serviceNotAvailable.svg</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\serviceNotAvailable.svg">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\serviceNotAvailable.svg</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\serviceNotAvailable.svg</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\tooManyRequests.svg">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\tooManyRequests.svg</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\img\tooManyRequests.svg</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-site-spacing-styling-hooks.min.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-site-spacing-styling-hooks.min.css</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-site-spacing-styling-hooks.min.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-slds-extensions.min.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-slds-extensions.min.css</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-slds-extensions.min.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-styling-hooks.min.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-styling-hooks.min.css</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\dxp-styling-hooks.min.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system.min.css">
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system.min.css</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system.min.css</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system.min.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system.min.css</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system.min.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system_touch.min.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system_touch.min.css</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\salesforce-lightning-design-system_touch.min.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\styles.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\styles.css</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\styles\styles.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\themes\alpine.css">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\themes\alpine.css</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\assets\themes\alpine.css</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\maintenance.html">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\maintenance.html</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\maintenance.html</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\toomanyrequests.html">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\toomanyrequests.html</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\toomanyrequests.html</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\toomanyrequests.html">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\toomanyrequests.html</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\toomanyrequests.html</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\0b9f2b1a68\prod\lwr_loader">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\0b9f2b1a68\prod\lwr_loader</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\0b9f2b1a68\prod\lwr_loader</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\1e52f7ca3b\prod\lwr_app">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\1e52f7ca3b\prod\lwr_app</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\1e52f7ca3b\prod\lwr_app</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\369197585e\prod\consent-banner">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\369197585e\prod\consent-banner</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\369197585e\prod\consent-banner</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\4438ce1aaa\prod\experience-web-sdk">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\4438ce1aaa\prod\experience-web-sdk</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\4438ce1aaa\prod\experience-web-sdk</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\5fee7f1e62\prod\oasis">
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\5fee7f1e62\prod\oasis</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\5fee7f1e62\prod\oasis</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\5fee7f1e62\prod\oasis">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\5fee7f1e62\prod\oasis</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\5fee7f1e62\prod\oasis</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\680f1058f9\prod\lwr_lwc">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\680f1058f9\prod\lwr_lwc</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\680f1058f9\prod\lwr_lwc</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\70e88ceef7\prod\lwr_bootstrap">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\70e88ceef7\prod\lwr_bootstrap</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\70e88ceef7\prod\lwr_bootstrap</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\751ffe6072\prod\lwr_bootstrap_locker">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\751ffe6072\prod\lwr_bootstrap_locker</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\751ffe6072\prod\lwr_bootstrap_locker</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8976612ec4\prod\lwr_loader">
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8976612ec4\prod\lwr_loader</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8976612ec4\prod\lwr_loader</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8a89c48cb8\prod\lwr_mobile">
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8a89c48cb8\prod\lwr_mobile</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\8a89c48cb8\prod\lwr_mobile</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\90ded6deeb\prod\localeredirect">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\90ded6deeb\prod\localeredirect</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\90ded6deeb\prod\localeredirect</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\98698c76aa\prod\browsercheck">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\98698c76aa\prod\browsercheck</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\98698c76aa\prod\browsercheck</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\aec3b38fec\prod\lwr_app_bootstrap_hook">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\aec3b38fec\prod\lwr_app_bootstrap_hook</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\aec3b38fec\prod\lwr_app_bootstrap_hook</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\d0e8fe2700\prod\lwr_mobile">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\d0e8fe2700\prod\lwr_mobile</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\d0e8fe2700\prod\lwr_mobile</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\f678edda9b\prod\data-layer-events">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\f678edda9b\prod\data-layer-events</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\framework\f678edda9b\prod\data-layer-events</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\template_html\42fa84e2f6\prod\index">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\template_html\42fa84e2f6\prod\index</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\template_html\42fa84e2f6\prod\index</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4530a01ad84333b9130152c1fa4c64f2\prod\en_US\service_Not_Available_view">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4530a01ad84333b9130152c1fa4c64f2\prod\en_US\service_Not_Available_view</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\4530a01ad84333b9130152c1fa4c64f2\prod\en_US\service_Not_Available_view</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\633b3f51e6122c9bf1d30c0975f360d5\prod\en_US\service_Not_Available_view">
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\633b3f51e6122c9bf1d30c0975f360d5\prod\en_US\service_Not_Available_view</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\633b3f51e6122c9bf1d30c0975f360d5\prod\en_US\service_Not_Available_view</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\72802f2528b23c03238f20a8fa5273cc\prod\en_US\serviceNotAvailable_view">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\72802f2528b23c03238f20a8fa5273cc\prod\en_US\serviceNotAvailable_view</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\72802f2528b23c03238f20a8fa5273cc\prod\en_US\serviceNotAvailable_view</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\88e2a50425b8a7ad7457c65c753f3207\prod\en_US\too_Many_Requests_view">
+      <SubType>StaticResourceZipItem</SubType>
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\88e2a50425b8a7ad7457c65c753f3207\prod\en_US\too_Many_Requests_view</PhysicalRelativePath>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\88e2a50425b8a7ad7457c65c753f3207\prod\en_US\too_Many_Requests_view</StaticResourcePath>
+      <MetadataType>StaticResourceZipItem</MetadataType>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\aac6cc7591ef7223a3bf55a6469d599a\prod\en_US\serviceNotAvailable_view">
+      <PhysicalRelativePath>resource-bundles\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\aac6cc7591ef7223a3bf55a6469d599a\prod\en_US\serviceNotAvailable_view</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SNA_CommunityAV1_sf_default_cdn_SQ0iq</StaticResource>
+      <StaticResourcePath>staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq\webruntime\view\aac6cc7591ef7223a3bf55a6469d599a\prod\en_US\serviceNotAvailable_view</StaticResourcePath>
+    </StaticZipItem>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="classes\BatchSincroStatiInvoice.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\BatchSincroStatiInvoice.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\BatchSincroStatiInvoice.cls</DependentUpon>
+    </None>
+    <None Include="classes\BatchSincroStatiInvoice2.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\BatchSincroStatiInvoice2.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\BatchSincroStatiInvoice2.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChangePasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChangePasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ChangePasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChangePasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ChangePasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLandingController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesLandingController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLandingControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesLandingControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLoginController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesLoginController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLoginControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesLoginControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegConfirmController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesSelfRegConfirmController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesSelfRegConfirmControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesSelfRegController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesSelfRegControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CustomLog.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\CustomLog.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\CustomLog.cls</DependentUpon>
+    </None>
+    <None Include="classes\DataFactory.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\DataFactory.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\DataFactory.cls</DependentUpon>
+    </None>
+    <None Include="classes\ForgotPasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ForgotPasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ForgotPasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ForgotPasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ForgotPasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ForgotPasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\MicrobatchSelfRegController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MicrobatchSelfRegController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MicrobatchSelfRegController.cls</DependentUpon>
+    </None>
+    <None Include="classes\MicrobatchSelfRegControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MicrobatchSelfRegControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MicrobatchSelfRegControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\MockHttpResponseGenerator.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\MockHttpResponseGenerator.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\MockHttpResponseGenerator.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyProfilePageController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyProfilePageController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MyProfilePageController.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyProfilePageControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyProfilePageControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MyProfilePageControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\OpenApi.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\OpenApi.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\OpenApi.cls</DependentUpon>
+    </None>
+    <None Include="classes\OpenApiHelper.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\OpenApiHelper.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\OpenApiHelper.cls</DependentUpon>
+    </None>
+    <None Include="classes\OpenApiStructure.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\OpenApiStructure.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\OpenApiStructure.cls</DependentUpon>
+    </None>
+    <None Include="classes\OppoCustomIntegration.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\OppoCustomIntegration.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\OppoCustomIntegration.cls</DependentUpon>
+    </None>
+    <None Include="classes\OppoIntegrationStructure.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\OppoIntegrationStructure.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\OppoIntegrationStructure.cls</DependentUpon>
+    </None>
+    <None Include="classes\opportunityTriggerSupport.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\opportunityTriggerSupport.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\opportunityTriggerSupport.cls</DependentUpon>
+    </None>
+    <None Include="classes\SchedulableBatchSincroStatiInvoice.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SchedulableBatchSincroStatiInvoice.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SchedulableBatchSincroStatiInvoice.cls</DependentUpon>
+    </None>
+    <None Include="classes\SendOpportunityToAP.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SendOpportunityToAP.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SendOpportunityToAP.cls</DependentUpon>
+    </None>
+    <None Include="classes\SetFileVisibility.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SetFileVisibility.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SetFileVisibility.cls</DependentUpon>
+    </None>
+    <None Include="classes\SetFileVisibilityTriggerSupport.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SetFileVisibilityTriggerSupport.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SetFileVisibilityTriggerSupport.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteLoginController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteLoginController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteLoginController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteLoginControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteLoginControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteLoginControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteRegisterController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteRegisterController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteRegisterController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteRegisterControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteRegisterControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteRegisterControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\TestOppoCustomIntegration.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\TestOppoCustomIntegration.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\TestOppoCustomIntegration.cls</DependentUpon>
+    </None>
+    <None Include="classes\TestSetFileVisibility.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\TestSetFileVisibility.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\TestSetFileVisibility.cls</DependentUpon>
+    </None>
+    <None Include="classes\Test_OpenApi.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\Test_OpenApi.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\Test_OpenApi.cls</DependentUpon>
+    </None>
+    <None Include="classes\Test_TICApi.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\Test_TICApi.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\Test_TICApi.cls</DependentUpon>
+    </None>
+    <None Include="classes\TICApi.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\TICApi.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\TICApi.cls</DependentUpon>
+    </None>
+    <None Include="classes\TICApiHelper.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\TICApiHelper.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\TICApiHelper.cls</DependentUpon>
+    </None>
+    <None Include="classes\TICstructure.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\TICstructure.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\TICstructure.cls</DependentUpon>
+    </None>
+    <None Include="classes\XMLDom.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\XMLDom.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\XMLDom.cls</DependentUpon>
+    </None>
+    <None Include="classes\XMLDom_Test.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\XMLDom_Test.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\XMLDom_Test.cls</DependentUpon>
+    </None>
+    <None Include="classes\XMLSerializer.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\XMLSerializer.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\XMLSerializer.cls</DependentUpon>
+    </None>
+    <None Include="classes\XMLSerializer_Test.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\XMLSerializer_Test.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\XMLSerializer_Test.cls</DependentUpon>
+    </None>
+    <None Include="components\SiteFooter.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteFooter.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteFooter.component</DependentUpon>
+    </None>
+    <None Include="components\SiteHeader.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteHeader.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteHeader.component</DependentUpon>
+    </None>
+    <None Include="components\SiteLogin.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteLogin.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteLogin.component</DependentUpon>
+    </None>
+    <None Include="components\SitePoweredBy.component-meta.xml">
+      <PhysicalRelativePath>src\components\SitePoweredBy.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SitePoweredBy.component</DependentUpon>
+    </None>
+    <None Include="lwc\throwToastMessage\throwToastMessage.js-meta.xml">
+      <PhysicalRelativePath>src\lwc\throwToastMessage\throwToastMessage.js-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>lwc\throwToastMessage\throwToastMessage.js</DependentUpon>
+    </None>
+    <None Include="pages\AnswersHome.page-meta.xml">
+      <PhysicalRelativePath>src\pages\AnswersHome.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\AnswersHome.page</DependentUpon>
+    </None>
+    <None Include="pages\BandwidthExceeded.page-meta.xml">
+      <PhysicalRelativePath>src\pages\BandwidthExceeded.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\BandwidthExceeded.page</DependentUpon>
+    </None>
+    <None Include="pages\ChangePassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChangePassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ChangePassword.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesLanding.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesLanding.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesLanding.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesLogin.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesLogin.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesSelfReg.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfReg.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesSelfReg.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesSelfRegConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfRegConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesSelfRegConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\Exception.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Exception.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\Exception.page</DependentUpon>
+    </None>
+    <None Include="pages\FileNotFound.page-meta.xml">
+      <PhysicalRelativePath>src\pages\FileNotFound.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\FileNotFound.page</DependentUpon>
+    </None>
+    <None Include="pages\ForgotPassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ForgotPassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ForgotPassword.page</DependentUpon>
+    </None>
+    <None Include="pages\ForgotPasswordConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ForgotPasswordConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ForgotPasswordConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\IdeasHome.page-meta.xml">
+      <PhysicalRelativePath>src\pages\IdeasHome.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\IdeasHome.page</DependentUpon>
+    </None>
+    <None Include="pages\InMaintenance.page-meta.xml">
+      <PhysicalRelativePath>src\pages\InMaintenance.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\InMaintenance.page</DependentUpon>
+    </None>
+    <None Include="pages\MicrobatchSelfReg.page-meta.xml">
+      <PhysicalRelativePath>src\pages\MicrobatchSelfReg.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\MicrobatchSelfReg.page</DependentUpon>
+    </None>
+    <None Include="pages\MyProfilePage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\MyProfilePage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\MyProfilePage.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteLogin.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteLogin.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteRegister.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteRegister.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteRegister.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteRegisterConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteRegisterConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteRegisterConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\StdExceptionTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\StdExceptionTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\StdExceptionTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\Unauthorized.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Unauthorized.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\Unauthorized.page</DependentUpon>
+    </None>
+    <None Include="pages\UnderConstruction.page-meta.xml">
+      <PhysicalRelativePath>src\pages\UnderConstruction.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\UnderConstruction.page</DependentUpon>
+    </None>
+    <None Include="triggers\opportunityTrigger.trigger-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\triggers\opportunityTrigger.trigger-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>triggers\opportunityTrigger.trigger</DependentUpon>
+    </None>
+    <None Include="triggers\SetFileVisibilityTrigger.trigger-meta.xml">
+      <PhysicalRelativePath>src\triggers\SetFileVisibilityTrigger.trigger-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>triggers\SetFileVisibilityTrigger.trigger</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AnonymousApex Include="AnonymousApex\Liuca.anonymous">
+      <SubType>AnonymousApex</SubType>
+      <PhysicalRelativePath>AnonymousApex\Liuca.anonymous</PhysicalRelativePath>
+    </AnonymousApex>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZip Include="staticresources\SiteSamples">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+    <StaticZip Include="staticresources\SNA_CommunityAV1_sf_default_cdn_SQ0iq">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+  </ItemGroup>
+</Project>

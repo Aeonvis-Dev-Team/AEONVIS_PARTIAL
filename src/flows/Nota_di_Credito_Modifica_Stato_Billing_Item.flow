@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <assignments>
+        <name>Assegna_status_NC_Fase_2</name>
+        <label>Assegna status NC Fase #2</label>
+        <locationX>50</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>Ottieni_Billing_Item.Billing_status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Aggiorna_NC_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assegna_status_NC_Fase_3</name>
+        <label>Assegna status NC Fase #3</label>
+        <locationX>578</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>Ottieni_Billing_Item.Billing_status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Invoiced</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Ottieni_Billing_Item.Data_scadenza__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Billing_due_date</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Ottieni_Billing_Item.Billing_date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Billing_date</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Ottieni_Billing_Item.Billing_number__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Billing_number</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Aggiorna_NC_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assegna_status_NC_Fase_4</name>
+        <label>Assegna status NC Fase #4</label>
+        <locationX>314</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>Ottieni_Billing_Item.Billing_status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Not to be invoiced</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Aggiorna_NC_Status</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Approved</name>
+        <choiceText>Approved</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Approved</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Invoiceinprogress</name>
+        <choiceText>Invoice in progress</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Invoice in progress</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Nottobeinvoiced</name>
+        <choiceText>Not to be invoiced</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Not to be invoiced</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ProcessoIntegrato</name>
+        <choiceText>Processo automatico</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Processo automatico</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ProcessoManuale</name>
+        <choiceText>Processo manuale</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Processo manuale</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Tobeapproved</name>
+        <choiceText>To be approved</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>To be approved</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>NC_Controllo_criteri_di_accesso</name>
+        <label>NC - Controllo criteri di accesso</label>
+        <locationX>710</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Nota_C_No_Amministrazione</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Profilo_Amministrazione</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Amministrazione</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Amministratore del sistema</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Nota_C_Fase_3</targetReference>
+            </connector>
+            <label>Profilo = Amministrazione</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>NC_Controllo_Fase_Successiva</name>
+        <label>NC - Controllo Fase Successiva</label>
+        <locationX>182</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Nota_C_Fase_4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NC - Cambio in Not to be approved</defaultConnectorLabel>
+        <rules>
+            <name>NC_Cambio_in_Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Fase</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Approved</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Nota_C_Fase_2</targetReference>
+            </connector>
+            <label>NC - Cambio in Approved</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>NC_Da_Fase</name>
+        <label>NC - Da Fase</label>
+        <locationX>644</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Nota_C_Nessuna_Fase</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NC_To_be_approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Ottieni_Billing_Item.Billing_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>To be approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Nota_C_Scelta_Fase</targetReference>
+            </connector>
+            <label>NC - To be approved</label>
+        </rules>
+        <rules>
+            <name>NC_Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Ottieni_Billing_Item.Billing_status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>NC_Controllo_criteri_di_accesso</targetReference>
+            </connector>
+            <label>NC - Approved</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Nota Credito - Change Status Billing Item {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Nota di Credito - Modifica Stato Billing Item</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Ottieni_Billing_Item</name>
+        <label>Ottieni Billing Item</label>
+        <locationX>644</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Aggiorna_Tecnical_Status_true</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Billing_Item__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Aggiorna_NC_Status</name>
+        <label>Aggiorna NC Status</label>
+        <locationX>644</locationX>
+        <locationY>1058</locationY>
+        <connector>
+            <targetReference>NC_Conferma_Modifica_Fase</targetReference>
+        </connector>
+        <inputReference>Ottieni_Billing_Item</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Aggiorna_Tecnical_Status_false</name>
+        <label>Aggiorna Tecnical Status = false</label>
+        <locationX>644</locationX>
+        <locationY>1274</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Tecnical_Status__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Billing_Item__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Aggiorna_Tecnical_Status_true</name>
+        <label>Aggiorna Tecnical Status = true</label>
+        <locationX>644</locationX>
+        <locationY>242</locationY>
+        <connector>
+            <targetReference>NC_Da_Fase</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Tecnical_Status__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Billing_Item__c</object>
+    </recordUpdates>
+    <screens>
+        <name>NC_Conferma_Modifica_Fase</name>
+        <label>NC Conferma Modifica Fase</label>
+        <locationX>644</locationX>
+        <locationY>1166</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Aggiorna_Tecnical_Status_false</targetReference>
+        </connector>
+        <fields>
+            <name>Testo1</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(2, 179, 46); font-size: 14px;&quot;&gt;Cambio di fase avvenuta con successo!&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Nota_C_Fase_2</name>
+        <label>Nota C - Fase #2</label>
+        <locationX>50</locationX>
+        <locationY>674</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assegna_status_NC_Fase_2</targetReference>
+        </connector>
+        <fields>
+            <name>TestoNotaC_Fase2</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Il billing Item sta per essere approvato: Totale Importo &lt;/span&gt;&lt;strong style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;&lt;u&gt;{!Ottieni_Billing_Item.Billing_amount__c}&lt;/u&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt; €&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Sei sicuro di voler procedere?﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Nota_C_Fase_3</name>
+        <label>Nota C - Fase #3</label>
+        <locationX>578</locationX>
+        <locationY>566</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assegna_status_NC_Fase_3</targetReference>
+        </connector>
+        <fields>
+            <name>TestoNotaC_Fase3</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Il billing item sta per essere spostato in &lt;/span&gt;&lt;strong style=&quot;font-size: 14px; color: rgb(215, 120, 5);&quot;&gt;&lt;u&gt;Invoiced&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;Inserire i seguenti dati: &lt;/span&gt;&lt;u style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;billing date&lt;/u&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;, &lt;/span&gt;&lt;u style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;billing due date&lt;/u&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt; e &lt;/span&gt;&lt;u style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;billing number&lt;/u&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Billing_date</name>
+            <dataType>Date</dataType>
+            <fieldText>Billing date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Billing_due_date</name>
+            <dataType>Date</dataType>
+            <fieldText>Billing due date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Billing_number</name>
+            <dataType>String</dataType>
+            <fieldText>Billing number</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Nota_C_Fase_4</name>
+        <label>Nota C - Fase #4</label>
+        <locationX>314</locationX>
+        <locationY>674</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assegna_status_NC_Fase_4</targetReference>
+        </connector>
+        <fields>
+            <name>TestoNotaC_Fase4</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Il billing Item sta per essere spostato nella fase &lt;/span&gt;&lt;strong style=&quot;font-size: 14px; color: rgb(215, 120, 5);&quot;&gt;&lt;u&gt;Not to be invoiced&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Sei sicuro di voler procedere?&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Nota_C_Nessuna_Fase</name>
+        <label>Nota C - Nessuna Fase</label>
+        <locationX>1106</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Testo</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 20px; color: rgb(247, 10, 10);&quot;&gt;ATTENZIONE&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: var(--slds-g-color-neutral-base-100, var(--lwc-colorBackgroundInput,rgb(255, 255, 255))); color: var(--slds-g-color-neutral-base-30, var(--lwc-colorTextWeak,rgb(68, 68, 68))); font-family: var(--lwc-fontFamily,-apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;); font-size: 14px;&quot;&gt;Il billing item è in &lt;/span&gt;&lt;strong style=&quot;background-color: var(--slds-g-color-neutral-base-100, var(--lwc-colorBackgroundInput,rgb(255, 255, 255))); color: var(--slds-g-color-neutral-base-30, var(--lwc-colorTextWeak,rgb(68, 68, 68))); font-family: var(--lwc-fontFamily,-apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;); font-size: 14px;&quot;&gt;&lt;u&gt;{!Ottieni_Billing_Item.Billing_status__c}&lt;/u&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: var(--slds-g-color-neutral-base-100, var(--lwc-colorBackgroundInput,rgb(255, 255, 255))); color: var(--slds-g-color-neutral-base-30, var(--lwc-colorTextWeak,rgb(68, 68, 68))); font-family: var(--lwc-fontFamily,-apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;); font-size: 14px;&quot;&gt;, non è possibile spostarlo in nessuna delle altre fasi.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Nota_C_No_Amministrazione</name>
+        <label>Nota C - No Amministrazione</label>
+        <locationX>842</locationX>
+        <locationY>566</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Testo_NC_No_Amministrazione</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 20px; color: rgb(247, 10, 10);&quot;&gt;ATTENZIONE﻿&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Non puoi cambiare lo stato del billing item in &lt;/span&gt;&lt;strong style=&quot;font-size: 14px; color: rgb(215, 120, 5);&quot;&gt;&lt;u&gt;Invoiced&lt;/u&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;, solo un utente con profilo &lt;/span&gt;&lt;u style=&quot;font-size: 14px;&quot;&gt;Amministratore del sistema&lt;/u&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt; o di &lt;/span&gt;&lt;u style=&quot;font-size: 14px;&quot;&gt;Amministrazione&lt;/u&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt; può procedere alla modifica.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Nota_C_Scelta_Fase</name>
+        <label>Nota C - Scelta Fase</label>
+        <locationX>182</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>NC_Controllo_Fase_Successiva</targetReference>
+        </connector>
+        <fields>
+            <name>AzioneDaSvolgere</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;In quale fase vuoi spostare il Billing Item?&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Fase</name>
+            <choiceReferences>Approved</choiceReferences>
+            <choiceReferences>Nottobeinvoiced</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Ottieni_Billing_Item.Billing_status__c</elementReference>
+            </defaultValue>
+            <fieldText>Fase</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>518</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Ottieni_Billing_Item</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>EsitoInvioFattura</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

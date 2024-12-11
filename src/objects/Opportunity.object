@@ -1,0 +1,2763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>New_Awesome_Companct_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>New_Awesome_Companct_Layout</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>CloseDate</fields>
+        <fields>Amount</fields>
+        <fields>OwnerId</fields>
+        <label>New Awesome Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <inlineHelpText>Opportunity revenue</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Bill_to__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Reference billing account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is empty is filled automatically with the opportunity commercial account</inlineHelpText>
+        <label>Bill to</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <errorMessage>Bill to can be the commercial account or an account child of commercial account or the contractor account of the opportunity</errorMessage>
+            <filterItems>
+                <field>Account.ParentId</field>
+                <operation>equals</operation>
+                <valueField>$Source.AccountId</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Account.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.AccountId</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Account.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.Partner__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Opportunities (Bill to)</relationshipLabel>
+        <relationshipName>Opportunity_Bill_to</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Billin_Plan_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Plan Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Not Completed</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Billing_item_not_to_be_invoiced__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing item not to be invoiced</label>
+        <summarizedField>Billing_Item__c.Billing_amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Billing_Item__c.Billing_status__c</field>
+            <operation>equals</operation>
+            <value>Not to be invoiced</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Billing_Item__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Billing_item_total_amount__c</fullName>
+        <description>Totale dell&apos;amount degli item di fatturazione dell&apos;opportunity</description>
+        <externalId>false</externalId>
+        <label>Billing item total amount</label>
+        <summarizedField>Billing_Item__c.Billing_amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Billing_Item__c.Billing_status__c</field>
+            <operation>notEqual</operation>
+            <value>Not to be invoiced</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Billing_Item__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Billing_item_total_expenses_invoiced__c</fullName>
+        <description>Totale degli amount out of pocket expenses degli elementi di fatturazione fatturati</description>
+        <externalId>false</externalId>
+        <label>Billing item total expenses invoiced</label>
+        <summarizedField>Billing_Item__c.Out_of_pocket_amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Billing_Item__c.Billing_status__c</field>
+            <operation>equals</operation>
+            <value>Invoiced</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Billing_Item__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Billing_item_total_invoiced__c</fullName>
+        <description>Totale dell&apos;amount fatturato degli item di fatturazione dell&apos;opportunity</description>
+        <externalId>false</externalId>
+        <label>Billing item total invoiced</label>
+        <summarizedField>Billing_Item__c.Billing_amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Billing_Item__c.Billing_status__c</field>
+            <operation>equals</operation>
+            <value>Invoiced</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Billing_Item__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Billing_items__c</fullName>
+        <description>Number of billing items created for the opportunity</description>
+        <externalId>false</externalId>
+        <label>Billing items</label>
+        <summaryForeignKey>Billing_Item__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Budget_Confirmed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Budget Confirmed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Business_Develoment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated BD Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Closed_Month_Number__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <externalId>false</externalId>
+        <formula>MONTH( CloseDate )</formula>
+        <label>Closed Month Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Code__c</fullName>
+        <description>Opportunity code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically filled</inlineHelpText>
+        <label>Opportunity ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Codice_Fornitore__c</fullName>
+        <externalId>false</externalId>
+        <label>Codice Fornitore</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competition__c</fullName>
+        <description>Opportunity based on a competitive bid</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Insert here competitors name in case of competitive bid</inlineHelpText>
+        <label>Competition</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Account&apos;s contact for this opportunity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account&apos;s contact for this opportunity</inlineHelpText>
+        <label>Account Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.AccountId</field>
+                <operation>equals</operation>
+                <valueField>Contact.AccountId</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMS</fullName>
+                    <default>false</default>
+                    <label>AMS</label>
+                </value>
+                <value>
+                    <fullName>Consulting</fullName>
+                    <default>false</default>
+                    <label>Consulting</label>
+                </value>
+                <value>
+                    <fullName>Resale</fullName>
+                    <default>false</default>
+                    <label>Resale</label>
+                </value>
+                <value>
+                    <fullName>System Integration</fullName>
+                    <default>false</default>
+                    <label>System Integration</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Created_Month_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>MONTH( datevalue(CreatedDate ))</formula>
+        <label>Created Month Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Discovery_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Discovery Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Elapsed__c</fullName>
+        <externalId>false</externalId>
+        <label>Elapsed (months)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engagement_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Engagement Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>T&amp;M</fullName>
+                    <default>false</default>
+                    <label>T&amp;M</label>
+                </value>
+                <value>
+                    <fullName>Forfait</fullName>
+                    <default>false</default>
+                    <label>Forfait</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Expected_Margin__c</fullName>
+        <description>Expected margin (%)</description>
+        <externalId>false</externalId>
+        <formula>1-Revenue__c / Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Margin_included_BD_cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Amount - Revenue__c - Total_costs__c)/Amount</formula>
+        <label>Expected Margin (included Actual BDCost)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Expected_fulfillment_date__c</fullName>
+        <description>Project Start date + elapsed months</description>
+        <externalId>false</externalId>
+        <formula>ADDMONTHS(Start_date__c, Elapsed__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected fulfillment date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IqScore</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Last_Cost_Charges_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Cost Charges Period</label>
+        <summarizedField>BD_Cost_Charge__c.Scope_date__c</summarizedField>
+        <summaryForeignKey>BD_Cost_Charge__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Line_of_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>Line of Business</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Generic</fullName>
+                    <default>false</default>
+                    <label>Generic</label>
+                </value>
+                <value>
+                    <fullName>CDG</fullName>
+                    <default>false</default>
+                    <label>CDG</label>
+                </value>
+                <value>
+                    <fullName>Area SAP</fullName>
+                    <default>false</default>
+                    <label>ERP</label>
+                </value>
+                <value>
+                    <fullName>SCP</fullName>
+                    <default>false</default>
+                    <label>SCP</label>
+                </value>
+                <value>
+                    <fullName>CRM</fullName>
+                    <default>false</default>
+                    <label>CRM</label>
+                </value>
+                <value>
+                    <fullName>AMS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>AMS (NON USARE)</label>
+                </value>
+                <value>
+                    <fullName>Advanced Analytics</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Advanced Analytics</label>
+                </value>
+                <value>
+                    <fullName>Digital Transformation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Digital Transformation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Loss_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Loss Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Competitor</fullName>
+                    <default>false</default>
+                    <label>Competitor</label>
+                </value>
+                <value>
+                    <fullName>Insourcing</fullName>
+                    <default>false</default>
+                    <label>Insourcing</label>
+                </value>
+                <value>
+                    <fullName>Not Done/No Decision</fullName>
+                    <default>false</default>
+                    <label>Not Done/No Decision</label>
+                </value>
+                <value>
+                    <fullName>No resources</fullName>
+                    <default>false</default>
+                    <label>No resources</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Duplicated</fullName>
+                    <default>false</default>
+                    <label>Duplicated / Wrong Creation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Numeratore_Appoggio__c</fullName>
+        <externalId>false</externalId>
+        <label>Numeratore Appoggio</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offering__c</fullName>
+        <externalId>false</externalId>
+        <label>Offering</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SUB_LOB__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Project/Program management​</fullName>
+                    <default>false</default>
+                    <label>Project/Program management​</label>
+                </value>
+                <value>
+                    <fullName>Operations Governance​</fullName>
+                    <default>false</default>
+                    <label>Operations Governance​</label>
+                </value>
+                <value>
+                    <fullName>Business Transformation​</fullName>
+                    <default>false</default>
+                    <label>Business Transformation​</label>
+                </value>
+                <value>
+                    <fullName>F&amp;PM​</fullName>
+                    <default>false</default>
+                    <label>F&amp;PM​</label>
+                </value>
+                <value>
+                    <fullName>ESG​</fullName>
+                    <default>false</default>
+                    <label>ESG​</label>
+                </value>
+                <value>
+                    <fullName>Operational Improvement​</fullName>
+                    <default>false</default>
+                    <label>Operational Improvement​</label>
+                </value>
+                <value>
+                    <fullName>IT Strategy​</fullName>
+                    <default>false</default>
+                    <label>IT Strategy​</label>
+                </value>
+                <value>
+                    <fullName>Digital CRM Strategy​​</fullName>
+                    <default>false</default>
+                    <label>Digital CRM Strategy​​</label>
+                </value>
+                <value>
+                    <fullName>Analytics &amp; Reporting​​</fullName>
+                    <default>false</default>
+                    <label>Analytics &amp; Reporting​​</label>
+                </value>
+                <value>
+                    <fullName>Activation Strategy</fullName>
+                    <default>false</default>
+                    <label>Activation Strategy</label>
+                </value>
+                <value>
+                    <fullName>ERP</fullName>
+                    <default>false</default>
+                    <label>ERP</label>
+                </value>
+                <value>
+                    <fullName>CRM</fullName>
+                    <default>false</default>
+                    <label>CRM</label>
+                </value>
+                <value>
+                    <fullName>SCP</fullName>
+                    <default>false</default>
+                    <label>SCP</label>
+                </value>
+                <value>
+                    <fullName>Generic</fullName>
+                    <default>false</default>
+                    <label>Generic</label>
+                </value>
+                <value>
+                    <fullName>AMS (NON USARE)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>AMS (NON USARE)</label>
+                </value>
+                <value>
+                    <fullName>CDG</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CDG</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Governance</controllingFieldValue>
+                <valueName>Project/Program management​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Governance</controllingFieldValue>
+                <valueName>Operations Governance​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGNT Consulting</controllingFieldValue>
+                <valueName>Business Transformation​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGNT Consulting</controllingFieldValue>
+                <valueName>F&amp;PM​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGNT Consulting</controllingFieldValue>
+                <valueName>ESG​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGNT Consulting</controllingFieldValue>
+                <valueName>Operational Improvement​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MGNT Consulting</controllingFieldValue>
+                <valueName>IT Strategy​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Digital</controllingFieldValue>
+                <valueName>Digital CRM Strategy​​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Digital</controllingFieldValue>
+                <valueName>Analytics &amp; Reporting​​</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Digital</controllingFieldValue>
+                <valueName>Activation Strategy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ERP</controllingFieldValue>
+                <valueName>ERP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CRM</controllingFieldValue>
+                <valueName>CRM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SCP</controllingFieldValue>
+                <valueName>SCP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <valueName>Generic</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Open_date__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <description>Opportunity open date</description>
+        <externalId>false</externalId>
+        <label>Open date</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Order_Amount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Order Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Order_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_amount_expenses__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Order amount expenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PM_Quality_manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PM Quality manager</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Project_Manager__c.Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Project_Manager__c</referenceTo>
+        <relationshipLabel>Opportunities - PM Quality manager</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity padre</description>
+        <externalId>false</externalId>
+        <label>Parent Opportunity</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.AccountId</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Child Opportunities</relationshipLabel>
+        <relationshipName>Related_opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PartnerAccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Edit Partner Contractor field when opportunity is contractually managed by a Partner company</inlineHelpText>
+        <label>Contractor</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The selected account must be a partner company</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Partner</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Opportunities as Contractual Partner</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payment_terms__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Termini di pagamento automaticamente riportati dall&apos;account.</inlineHelpText>
+        <label>Termini di pagamento</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>000DFFM</fullName>
+                    <default>false</default>
+                    <label>DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>000DINR</fullName>
+                    <default>false</default>
+                    <label>DATE INVOICE RECEIPT​</label>
+                </value>
+                <value>
+                    <fullName>15 GG DATA FATTURA</fullName>
+                    <default>false</default>
+                    <label>15 GG DATA FATTURA</label>
+                </value>
+                <value>
+                    <fullName>15 DAYS INVOICE DATE​</fullName>
+                    <default>false</default>
+                    <label>15 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>030DF-IT</fullName>
+                    <default>false</default>
+                    <label>30 GG DATA FATTURA ​</label>
+                </value>
+                <value>
+                    <fullName>030DF-EN</fullName>
+                    <default>false</default>
+                    <label>30 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>030DFFM</fullName>
+                    <default>false</default>
+                    <label>30 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>030FM-EN</fullName>
+                    <default>false</default>
+                    <label>30 DAYS END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>045DF</fullName>
+                    <default>false</default>
+                    <label>45 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>045DF-EN</fullName>
+                    <default>false</default>
+                    <label>45 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>045FDDF</fullName>
+                    <default>false</default>
+                    <label>45 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>045FDDF-EN</fullName>
+                    <default>false</default>
+                    <label>45 DAYS INVOICE DATE END OF MONTH</label>
+                </value>
+                <value>
+                    <fullName>060DF</fullName>
+                    <default>false</default>
+                    <label>60 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>060DF-EN</fullName>
+                    <default>false</default>
+                    <label>60 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>060DFFM</fullName>
+                    <default>false</default>
+                    <label>60 GG DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>060DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>60 DAYS INVOICE DATE END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>075</fullName>
+                    <default>false</default>
+                    <label>75 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>075-EN</fullName>
+                    <default>false</default>
+                    <label>75 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>090df</fullName>
+                    <default>false</default>
+                    <label>90 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>090df-EN</fullName>
+                    <default>false</default>
+                    <label>90 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>090DFFM</fullName>
+                    <default>false</default>
+                    <label>90 GG DATA FATTURA FINE MESE​</label>
+                </value>
+                <value>
+                    <fullName>090FM-EN</fullName>
+                    <default>false</default>
+                    <label>90 DAYS END OF MONTH​</label>
+                </value>
+                <value>
+                    <fullName>120DFFM</fullName>
+                    <default>false</default>
+                    <label>120 GG DATA FATTURA FINE MESE</label>
+                </value>
+                <value>
+                    <fullName>120DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>120 DAYS INVOICE DATE END OF MONTH</label>
+                </value>
+                <value>
+                    <fullName>270DFFM</fullName>
+                    <default>false</default>
+                    <label>270 GG DATA FATTURA​</label>
+                </value>
+                <value>
+                    <fullName>270DFFM-EN</fullName>
+                    <default>false</default>
+                    <label>270 DAYS INVOICE DATE​</label>
+                </value>
+                <value>
+                    <fullName>COMP</fullName>
+                    <default>false</default>
+                    <label>In compensazione con fattura stornata​</label>
+                </value>
+                <value>
+                    <fullName>COMPENG</fullName>
+                    <default>false</default>
+                    <label>To be compensated with reversed invoice ​</label>
+                </value>
+                <value>
+                    <fullName>105DF</fullName>
+                    <default>false</default>
+                    <label>105 GG DATA FATTURA</label>
+                </value>
+                <value>
+                    <fullName>0 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>0 DF</label>
+                </value>
+                <value>
+                    <fullName>0 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>0 FMDF</label>
+                </value>
+                <value>
+                    <fullName>120 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>120 FMDF</label>
+                </value>
+                <value>
+                    <fullName>270 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>270 FMDF</label>
+                </value>
+                <value>
+                    <fullName>30 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30 DF</label>
+                </value>
+                <value>
+                    <fullName>30 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30 FMDF</label>
+                </value>
+                <value>
+                    <fullName>30/60 RD</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>30/60 DFFM​</label>
+                </value>
+                <value>
+                    <fullName>45 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>45 DF</label>
+                </value>
+                <value>
+                    <fullName>60 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>60 FMDF</label>
+                </value>
+                <value>
+                    <fullName>75 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>75 DF</label>
+                </value>
+                <value>
+                    <fullName>90 DF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>90 DF</label>
+                </value>
+                <value>
+                    <fullName>90 FMDF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>90 FMDF</label>
+                </value>
+                <value>
+                    <fullName>AVIST</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>A VISTA​</label>
+                </value>
+                <value>
+                    <fullName>TRATCED</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Trattenuta sul cedolino​</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Platform__c</fullName>
+        <externalId>false</externalId>
+        <label>Platform</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Offering__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adobe Analytics</fullName>
+                    <default>false</default>
+                    <label>Adobe</label>
+                </value>
+                <value>
+                    <fullName>Board</fullName>
+                    <default>false</default>
+                    <label>Board</label>
+                </value>
+                <value>
+                    <fullName>Easy Fattura</fullName>
+                    <default>false</default>
+                    <label>Easy Fattura</label>
+                </value>
+                <value>
+                    <fullName>Google Analytics</fullName>
+                    <default>false</default>
+                    <label>Google</label>
+                </value>
+                <value>
+                    <fullName>HFM - Conso</fullName>
+                    <default>false</default>
+                    <label>HFM - Conso</label>
+                </value>
+                <value>
+                    <fullName>IBP</fullName>
+                    <default>false</default>
+                    <label>IBP</label>
+                </value>
+                <value>
+                    <fullName>JDA</fullName>
+                    <default>false</default>
+                    <label>JDA</label>
+                </value>
+                <value>
+                    <fullName>Kinaxis</fullName>
+                    <default>false</default>
+                    <label>Kinaxis</label>
+                </value>
+                <value>
+                    <fullName>Neptune</fullName>
+                    <default>false</default>
+                    <label>Neptune</label>
+                </value>
+                <value>
+                    <fullName>Salesforce</fullName>
+                    <default>false</default>
+                    <label>Salesforce</label>
+                </value>
+                <value>
+                    <fullName>SAP Business Objects</fullName>
+                    <default>false</default>
+                    <label>SAP Business Objects</label>
+                </value>
+                <value>
+                    <fullName>SAP Business One</fullName>
+                    <default>false</default>
+                    <label>SAP Business One</label>
+                </value>
+                <value>
+                    <fullName>SAP ECC</fullName>
+                    <default>false</default>
+                    <label>SAP ECC</label>
+                </value>
+                <value>
+                    <fullName>SAP RISE S/4 HANA PUBLIC</fullName>
+                    <default>false</default>
+                    <label>SAP RISE S/4 HANA PUBLIC</label>
+                </value>
+                <value>
+                    <fullName>SAP S/4 HANA OnPrem/Private</fullName>
+                    <default>false</default>
+                    <label>SAP S/4 HANA OnPrem/Private</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>NA/Unknown/Other/Varie</label>
+                </value>
+                <value>
+                    <fullName>Data Studio</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Data Studio</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Power BI</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Power BI</label>
+                </value>
+                <value>
+                    <fullName>Qlik Sense</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Qlik Sense</label>
+                </value>
+                <value>
+                    <fullName>SAP GROW S4HANA Cloud public edition</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SAP GROW S4HANA Cloud public edition</label>
+                </value>
+                <value>
+                    <fullName>SAP S4HANA OnPremise/RISE Cloud private edition</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SAP S4HANA OnPremise/RISE Cloud private edition</label>
+                </value>
+                <value>
+                    <fullName>Tableau</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Tableau</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>Varie</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Varie</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>ERP</controllingFieldValue>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>Easy Fattura</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ERP</controllingFieldValue>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>Neptune</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ERP</controllingFieldValue>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>SAP ECC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ERP</controllingFieldValue>
+                <controllingFieldValue>CRM</controllingFieldValue>
+                <controllingFieldValue>SCP</controllingFieldValue>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>NA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CRM</controllingFieldValue>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>Salesforce</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SCP</controllingFieldValue>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>IBP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SCP</controllingFieldValue>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>JDA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SCP</controllingFieldValue>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>Kinaxis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>Adobe Analytics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>Board</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>Google Analytics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>HFM - Conso</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>SAP Business Objects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <controllingFieldValue>Project/Program management​</controllingFieldValue>
+                <controllingFieldValue>Operations Governance​</controllingFieldValue>
+                <controllingFieldValue>Business Transformation​</controllingFieldValue>
+                <controllingFieldValue>F&amp;PM​</controllingFieldValue>
+                <controllingFieldValue>ESG​</controllingFieldValue>
+                <controllingFieldValue>Operational Improvement​</controllingFieldValue>
+                <controllingFieldValue>IT Strategy​</controllingFieldValue>
+                <controllingFieldValue>Digital CRM Strategy​​</controllingFieldValue>
+                <controllingFieldValue>Analytics &amp; Reporting​​</controllingFieldValue>
+                <controllingFieldValue>Activation Strategy</controllingFieldValue>
+                <valueName>SAP Business One</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <inlineHelpText>Admitted values: 0, 10, 25, 50, 75, 100</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Project_Manager__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Opportunity PM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity PM</inlineHelpText>
+        <label>Project Manager</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Project_Manager__c.Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Project_Manager__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project_closed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Order Fulfilled</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Project_closed_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Fulfillment date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Quality_review__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to define if the opportunity needs to be reviewed by quality manager</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Criteri da utilizzare e importi:
+ 
+1) Cliente Nuovo valore &gt; 50.000 Euro
+2) Forfait: valore &gt; 150.000 Euro
+3) T&amp;M: valore &gt; 300.000 Euro/anno
+4) AMS SLA: valore &gt; 100.000 Euro/anno
+5) AMS T&amp;M:  valore &gt; 200.000 Euro/anno
+6) Nuova «Tecnologia»: valore &gt;  50.000 Euro</inlineHelpText>
+        <label>Quality review</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Quality_review_status__c</fullName>
+        <description>Quality review status for the opportunity</description>
+        <externalId>false</externalId>
+        <label>Quality review status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>To be completed</fullName>
+                    <default>false</default>
+                    <label>To be completed</label>
+                </value>
+                <value>
+                    <fullName>Partial</fullName>
+                    <default>false</default>
+                    <label>Partial</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Not Relevant</fullName>
+                    <default>false</default>
+                    <label>Not Relevant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ROI_Analysis_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ROI Analysis Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Capacity_Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Residual Capacity Created</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Revenue__c</fullName>
+        <description>Opportunity cost</description>
+        <externalId>false</externalId>
+        <label>Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SDI_inserito__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK( Account.Codice_SDI__c )), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SDI inserito</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SUB_LOB__c</fullName>
+        <externalId>false</externalId>
+        <label>SUB-LOB</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Line_of_Business__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Governance</fullName>
+                    <default>false</default>
+                    <label>Governance</label>
+                </value>
+                <value>
+                    <fullName>MGNT Consulting</fullName>
+                    <default>false</default>
+                    <label>MGNT Consulting</label>
+                </value>
+                <value>
+                    <fullName>Digital</fullName>
+                    <default>false</default>
+                    <label>Digital</label>
+                </value>
+                <value>
+                    <fullName>ERP</fullName>
+                    <default>false</default>
+                    <label>ERP</label>
+                </value>
+                <value>
+                    <fullName>CRM</fullName>
+                    <default>false</default>
+                    <label>CRM</label>
+                </value>
+                <value>
+                    <fullName>SCP</fullName>
+                    <default>false</default>
+                    <label>SCP</label>
+                </value>
+                <value>
+                    <fullName>Generic</fullName>
+                    <default>false</default>
+                    <label>Generic</label>
+                </value>
+                <value>
+                    <fullName>AMS (NON USARE)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>AMS (NON USARE)</label>
+                </value>
+                <value>
+                    <fullName>CDG</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CDG</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CRM</controllingFieldValue>
+                <valueName>CRM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CDG</controllingFieldValue>
+                <valueName>Governance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CDG</controllingFieldValue>
+                <valueName>MGNT Consulting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CDG</controllingFieldValue>
+                <valueName>Digital</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Area SAP</controllingFieldValue>
+                <valueName>ERP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Generic</controllingFieldValue>
+                <valueName>Generic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SCP</controllingFieldValue>
+                <valueName>SCP</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SendNewTRProject__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SendNewTRProject</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Staff_costs__c</fullName>
+        <externalId>false</externalId>
+        <label>Staff Actual costs</label>
+        <summarizedField>BD_Cost_Charge__c.Staff_Cost__c</summarizedField>
+        <summaryForeignKey>BD_Cost_Charge__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Start_date__c</fullName>
+        <description>Data inizio lavori</description>
+        <externalId>false</externalId>
+        <label>Project Start date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Subco__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Subco</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR_Project_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>TR Project ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>T_L__c</fullName>
+        <externalId>false</externalId>
+        <label>T&amp;L</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not included - out of pocket</fullName>
+                    <default>true</default>
+                    <label>Not included - out of pocket</label>
+                </value>
+                <value>
+                    <fullName>Not Included - forfait</fullName>
+                    <default>false</default>
+                    <label>Not Included - forfait</label>
+                </value>
+                <value>
+                    <fullName>Included - forfait</fullName>
+                    <default>false</default>
+                    <label>Included - forfait</label>
+                </value>
+                <value>
+                    <fullName>Not included - no refound</fullName>
+                    <default>false</default>
+                    <label>Not included - no refound</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Technological_partner__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Platform/Vendor</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Partner</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Name</field>
+                <operation>notEqual</operation>
+                <value>Aeonvis</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Opportunities as Technological partner</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Total_costs__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Actual costs</label>
+        <summarizedField>BD_Cost_Charge__c.Total_Cost__c</summarizedField>
+        <summaryForeignKey>BD_Cost_Charge__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Travel_Costs__c</fullName>
+        <externalId>false</externalId>
+        <label>Travel Actual Costs</label>
+        <summarizedField>BD_Cost_Charge__c.Travel_Cost__c</summarizedField>
+        <summaryForeignKey>BD_Cost_Charge__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>fairu__test_field__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>test field</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Code__c</columns>
+        <columns>TR_Project_ID__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Order_Amount__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Billing_item_total_amount__c</columns>
+        <columns>Billing_item_total_invoiced__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.TYPE</columns>
+        <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Billin_Plan_Status__c</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2024 12:00 AM</value>
+        </filters>
+        <label>Tutte le opportunità</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>Default_Opportunity_Pipeline</fullName>
+        <booleanFilter>(1 OR 2)</booleanFilter>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>Opportunity Pipeline</label>
+    </listViews>
+    <listViews>
+        <fullName>Luxottica</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>contains</operation>
+            <value>Luxottica</value>
+        </filters>
+        <filters>
+            <field>Code__c</field>
+            <operation>contains</operation>
+            <value>AV21</value>
+        </filters>
+        <label>Luxottica</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Code__c</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Business_Develoment_Amount__c</columns>
+        <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>Opportunità personali</label>
+    </listViews>
+    <listViews>
+        <fullName>NONTOP5_Closing_this_Year</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>FCA</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Lux</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Kering Eyewear</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Aquafil</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Agrati</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <label>NON TOP5 - Closing this Year</label>
+    </listViews>
+    <listViews>
+        <fullName>NTOP5_Closing_this_Q</fullName>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>FCA</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Lux</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Kering Eyewear</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Aquafil</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>notContain</operation>
+            <value>Agrati</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_QUARTER</value>
+        </filters>
+        <label>NON TOP5 - Closing this Q</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>TOP5_AGRATI_Closing_this_Q</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>contains</operation>
+            <value>Agrati</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_QUARTER</value>
+        </filters>
+        <label>TOP5 - AGRATI - Closing this Q</label>
+    </listViews>
+    <listViews>
+        <fullName>TOP5_FCA_Closing_this_year</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Code__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>contains</operation>
+            <value>FCA</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <label>TOP5 - FCA - Closing this Year</label>
+    </listViews>
+    <listViews>
+        <fullName>TOP_5_FCA_Closing_this_Q</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>contains</operation>
+            <value>FCA</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_QUARTER</value>
+        </filters>
+        <label>TOP5 - FCA - Closing this Q</label>
+    </listViews>
+    <listViews>
+        <fullName>Test</fullName>
+        <columns>Code__c</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Contact__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TR_Project_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>equals</operation>
+            <value>EssilorLuxottica</value>
+        </filters>
+        <filters>
+            <field>Project_closed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost,Closed Archived</value>
+        </filters>
+        <label>EssilorLuxottica</label>
+    </listViews>
+    <listViews>
+        <fullName>Won</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Code__c</columns>
+        <columns>TR_Project_ID__c</columns>
+        <columns>Billing_items__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Won</label>
+    </listViews>
+    <listViews>
+        <fullName>Won_without_Billing_Item</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Code__c</columns>
+        <columns>TR_Project_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Billing_items__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Won without Billing Item</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Billing_plan_status_closed_check</fullName>
+        <active>false</active>
+        <description>Alla chiusura del billing plan dell&apos;opportunity verifica che il totale degli amount dei billing item siano pari all&apos;amount dell&apos;ordine</description>
+        <errorConditionFormula>AND (
+ISCHANGED(Billin_Plan_Status__c ),
+ ISPICKVAL(Billin_Plan_Status__c , &apos;Closed&apos;),
+  Billing_item_total_amount__c &lt;&gt; Order_Amount__c,
+   NOT(ISPICKVAL( Engagement_Type__c , &apos;T&amp;M&apos;))  
+)</errorConditionFormula>
+        <errorDisplayField>Billin_Plan_Status__c</errorDisplayField>
+        <errorMessage>The billing plan can&apos;t be closed. The total amount of billing items is not equal to the order amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ContractTypeMandatory</fullName>
+        <active>false</active>
+        <description>The contract type field is mandatory from the proposal phase onwards</description>
+        <errorConditionFormula>AND( ISBLANK(TEXT(Contract_type__c)), OR( ISPICKVAL( StageName , &apos;Proposal&apos;), ISPICKVAL( StageName , &apos;Negotiation&apos;), ISPICKVAL( StageName , &apos;Closed Negotiation&apos;), ISPICKVAL( StageName , &apos;Closed Won&apos;)) )</errorConditionFormula>
+        <errorDisplayField>Contract_type__c</errorDisplayField>
+        <errorMessage>The contract type field is mandatory from the proposal phase onwards</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Contracttype_required_with_order</fullName>
+        <active>true</active>
+        <description>Contract Type is required when order is filled</description>
+        <errorConditionFormula>AND(  NOT(ISBLANK( Order_Number__c )),  ISPICKVAL(Contract_type__c ,&quot;&quot;)  )</errorConditionFormula>
+        <errorDisplayField>Contract_type__c</errorDisplayField>
+        <errorMessage>Contract Type required when order number is filled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Controllo_Campi_Opp_Vinta</fullName>
+        <active>false</active>
+        <description>Controlla il Contractor: se è Aeonvis controlla i campi sull&apos;Account, altrimenti controlla i campi obbligatori su Contractor.</description>
+        <errorConditionFormula>(
+Partner__r.Name = &apos;Aeonvis&apos;
+
+&amp;&amp;
+
+OR(ISPICKVAL( StageName , &apos;Closed Won&apos;), ISPICKVAL( StageName , &apos;Closed Negotiation&apos;))
+
+&amp;&amp;
+
+OR(Account.VAT_number__c = &apos;&apos;, Account.Company_name__c = &apos;&apos;, Account.BillingCountry = &apos;&apos;, TR_Project_ID__c = &apos;&apos;, ISPICKVAL( Payment_terms__c , &apos;&apos;),  Account.Codice_SDI__c = &apos;&apos;))
+
+
+
+||
+
+
+(
+Partner__r.Name != &apos;Aeonvis&apos;
+
+&amp;&amp;
+
+OR(ISPICKVAL( StageName , &apos;Closed Won&apos;), ISPICKVAL( StageName , &apos;Closed Negotiation&apos;))
+
+&amp;&amp;
+
+OR(Partner__r.VAT_number__c = &apos;&apos;, Partner__r.Company_name__c = &apos;&apos;, Partner__r.BillingCountry = &apos;&apos;, TR_Project_ID__c = &apos;&apos;, ISPICKVAL( Payment_terms__c , &apos;&apos;),  Partner__r.Codice_SDI__c = &apos;&apos;))</errorConditionFormula>
+        <errorMessage>Compilare: Dati di Fatturazione (nel caso di Contractor diverso da Aeonvis verificare il Contractor), il TR Project ID, i Termini di Pagamento sull&apos;Opportunità.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cost_Required_With_Revenue</fullName>
+        <active>true</active>
+        <description>Rende obbligatorio il campo costo quando il campo revenue è compilato</description>
+        <errorConditionFormula>AND(  NOT(ISBLANK(Amount)),  ISBLANK(Revenue__c) )</errorConditionFormula>
+        <errorDisplayField>Revenue__c</errorDisplayField>
+        <errorMessage>Cost required when amount is filled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Elapsed_required_with_order</fullName>
+        <active>true</active>
+        <description>Elapsed (months) is required when order is filled</description>
+        <errorConditionFormula>AND(NOT(ISBLANK( Order_Number__c )),  ISBLANK( Elapsed__c )  )</errorConditionFormula>
+        <errorDisplayField>Elapsed__c</errorDisplayField>
+        <errorMessage>Elapsed (months) required when order number is filled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Engagement_type_required_with_order</fullName>
+        <active>true</active>
+        <description>Engagement Type is required when order is filled</description>
+        <errorConditionFormula>AND(  NOT(ISBLANK( Order_Number__c )),  ISPICKVAL( Engagement_Type__c ,&quot;&quot;) )</errorConditionFormula>
+        <errorDisplayField>Engagement_Type__c</errorDisplayField>
+        <errorMessage>Engagement Type required when order number is filled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EngagmentTypeMandatory</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( ISBLANK(TEXT( Engagement_Type__c )), OR( ISPICKVAL( StageName , &apos;Proposal&apos;), ISPICKVAL( StageName , &apos;Negotiation&apos;), ISPICKVAL( StageName , &apos;Closed Negotiation&apos;), ISPICKVAL( StageName , &apos;Closed Won&apos;)) )</errorConditionFormula>
+        <errorDisplayField>Engagement_Type__c</errorDisplayField>
+        <errorMessage>The engagment type field is mandatory from the proposal phase onwards</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OrderAmount_check_on_insert</fullName>
+        <active>false</active>
+        <description>All&apos;inserimento dell&apos;order amount, l&apos;order amount deve corrispondere al il totale del billing item (Billing item total amount dell&apos;opportunity)</description>
+        <errorConditionFormula>AND(
+ ISNULL(PRIORVALUE( Order_Amount__c )),
+ ISCHANGED(Order_Amount__c),
+ Order_Amount__c &lt;&gt;  Billing_item_total_amount__c 
+)</errorConditionFormula>
+        <errorDisplayField>Order_Amount__c</errorDisplayField>
+        <errorMessage>Billing items total amount is not equal to order amount. Review billing items before insert order amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_Fullfilled</fullName>
+        <active>false</active>
+        <description>Verifica che sia stato fatturato tutto e in caso di quality review che questa sia stata completata</description>
+        <errorConditionFormula>IF(
+AND(Project_closed__c = TRUE, Quality_review__c = TRUE), OR(Billing_item_total_invoiced__c &lt;&gt; Order_Amount__c, !ISPICKVAL(Quality_review_status__c , &quot;Completed&quot;)),
+IF(
+AND(Project_closed__c = TRUE, Quality_review__c = FALSE),
+Billing_item_total_invoiced__c &lt;&gt; Order_Amount__c, FALSE
+    )
+)</errorConditionFormula>
+        <errorMessage>In case of &quot;Order fullfilled&quot; is checked please check &quot;Billing Total Invoiced&quot; = &quot;Amount&quot; and &quot;Quality Status&quot; is completed (only when Quality review is checked)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_Fullfilled_New</fullName>
+        <active>true</active>
+        <description>Verifica che sia stato fatturato tutto e in caso di quality review che questa sia stata completata</description>
+        <errorConditionFormula>IF(
+AND(Project_closed__c = TRUE, Quality_review__c = TRUE), OR(Billing_item_total_invoiced__c &lt;&gt; (Order_Amount__c - Billing_item_not_to_be_invoiced__c) , !ISPICKVAL(Quality_review_status__c , &quot;Completed&quot;)),
+IF(
+AND(Project_closed__c = TRUE, Quality_review__c = FALSE),
+Billing_item_total_invoiced__c &lt;&gt; (Order_Amount__c - Billing_item_not_to_be_invoiced__c), FALSE
+)
+)</errorConditionFormula>
+        <errorMessage>In case of &quot;Order fullfilled&quot; is checked please check &quot;Billing Total Invoiced&quot; = &quot;Amount&quot; and &quot;Quality Status&quot; is completed (only when Quality review is checked)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_amount_required</fullName>
+        <active>true</active>
+        <description>Order amount required when order is filled</description>
+        <errorConditionFormula>AND(  NOT(ISBLANK( Order_Number__c )),  ISBLANK(  Order_Amount__c ) )</errorConditionFormula>
+        <errorDisplayField>Order_Amount__c</errorDisplayField>
+        <errorMessage>Order amount required when order number is filled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_fulfilled_only_for_closed_won</fullName>
+        <active>true</active>
+        <description>Order fulfilled can be selected only if the opportunity is in Closed won status</description>
+        <errorConditionFormula>AND( Project_closed__c  = TRUE, ISBLANK(Order_Number__c))</errorConditionFormula>
+        <errorDisplayField>Project_closed__c</errorDisplayField>
+        <errorMessage>Order can&apos;t be fulfilled if order number is empty</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_required_for_Closed_won_status</fullName>
+        <active>true</active>
+        <description>Order number is required when an opportunity has status closed won</description>
+        <errorConditionFormula>AND(  ISPICKVAL(StageName , &quot;Closed Won&quot;) ,  ISBLANK( Order_Number__c )  )</errorConditionFormula>
+        <errorDisplayField>Order_Number__c</errorDisplayField>
+        <errorMessage>Order number required for &quot;Closed Won&quot; opportunities</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Orderdate_required_with_order</fullName>
+        <active>true</active>
+        <description>Order date is required when order is filled</description>
+        <errorConditionFormula>AND(NOT(ISBLANK( Order_Number__c )),  ISBLANK( Order_Date__c )  )</errorConditionFormula>
+        <errorDisplayField>Order_Date__c</errorDisplayField>
+        <errorMessage>Order date required when order number is filled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Platform_field_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISBLANK(TEXT(Platform__c )),
+NOT(
+OR(
+ISPICKVAL(StageName, &apos;Closed Won&apos;),
+ISPICKVAL(StageName, &apos;Closed Lost&apos;),
+ISPICKVAL(StageName, &apos;Budget&apos;)
+)
+)
+)</errorConditionFormula>
+        <errorDisplayField>Platform__c</errorDisplayField>
+        <errorMessage>Please select a value for the &apos;Platform&apos; field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Project_close_date_future</fullName>
+        <active>true</active>
+        <description>Fulfillment date cannot be in the future</description>
+        <errorConditionFormula>NOT( ISNULL( Project_closed_date__c ) )&amp;&amp; Project_closed_date__c &gt;  TODAY()</errorConditionFormula>
+        <errorDisplayField>Project_closed_date__c</errorDisplayField>
+        <errorMessage>Fulfillment date cannot be in the future</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Project_close_date_required</fullName>
+        <active>true</active>
+        <description>Fulfillment date required when order fulfilled flag is on</description>
+        <errorConditionFormula>Project_closed__c  = TRUE  &amp;&amp;  ISNULL(Project_closed_date__c)</errorConditionFormula>
+        <errorDisplayField>Project_closed_date__c</errorDisplayField>
+        <errorMessage>Fulfillment date is required when the order is fulfilled</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Project_close_required</fullName>
+        <active>true</active>
+        <description>Order fulfilled flag required when the fulfillment date is filled</description>
+        <errorConditionFormula>NOT(ISNULL( Project_closed_date__c ) ) &amp;&amp;  Project_closed__c  = FALSE</errorConditionFormula>
+        <errorDisplayField>Project_closed__c</errorDisplayField>
+        <errorMessage>Order fulfilled must be selected when you insert a fulfillment date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Quality_manager_mandatory</fullName>
+        <active>true</active>
+        <description>Quality manager must be filled if flag quality review is active</description>
+        <errorConditionFormula>AND( Quality_review__c = TRUE, ISBLANK(  PM_Quality_manager__c  )  )</errorConditionFormula>
+        <errorDisplayField>PM_Quality_manager__c</errorDisplayField>
+        <errorMessage>Quality manager must be filled if quality review flag is active</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Quality_status_mandatory</fullName>
+        <active>false</active>
+        <description>Quality review status must be filled if flag quality review is active</description>
+        <errorConditionFormula>AND( Quality_review__c = TRUE, ISBLANK(   TEXT(Quality_review_status__c ))  )</errorConditionFormula>
+        <errorDisplayField>Quality_review_status__c</errorDisplayField>
+        <errorMessage>Quality review status must be filled if quality review flag is active</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Quality_status_mandatory_since_proposal</fullName>
+        <active>true</active>
+        <description>Quality review status must be filled if opportunity status is equal or greater than proposal</description>
+        <errorConditionFormula>AND( Probability &gt;= 0.50, ISBLANK(   TEXT(Quality_review_status__c ))  )</errorConditionFormula>
+        <errorDisplayField>Quality_review_status__c</errorDisplayField>
+        <errorMessage>Quality review status must be filled if opportunity stage is equal or greater than Proposal</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_date_close_date</fullName>
+        <active>false</active>
+        <description>La data di inizio lavori non può essere inferiore alla data di chiusura opportunità (solo &gt;=)</description>
+        <errorConditionFormula>Start_date__c  &lt;  CloseDate</errorConditionFormula>
+        <errorDisplayField>Start_date__c</errorDisplayField>
+        <errorMessage>The start date must be greater than or equal to the close date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Tr_project_Id_required_with_order</fullName>
+        <active>true</active>
+        <description>Tr project ID is required when order is filled</description>
+        <errorConditionFormula>AND(NOT(ISBLANK( Order_Number__c )),  ISBLANK( TR_Project_ID__c )  )</errorConditionFormula>
+        <errorDisplayField>TR_Project_ID__c</errorDisplayField>
+        <errorMessage>TR project ID required when order number is filled</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_TR_User_Push</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>New TR User</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://forms.office.com/Pages/ResponsePage.aspx?id=yIg7IEpcRkiSBa1_56xQSo2FfBqeUmdMtxwxo_lC1q5UQUxPRFYzQVRFOUwyVVk1UkZXS0w1MThURi4u</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_TR_project</fullName>
+        <availability>online</availability>
+        <description>Create new TR project</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>New TR project</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://forms.office.com/Pages/ResponsePage.aspx?id=yIg7IEpcRkiSBa1_56xQSo2FfBqeUmdMtxwxo_lC1q5UQklOVE5GSTdCNUJKRzRXRVhBRzZVTDNGNC4u</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_TR_user</fullName>
+        <availability>online</availability>
+        <description>Create new TR user</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>New TR user</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://forms.office.com/Pages/ResponsePage.aspx?id=yIg7IEpcRkiSBa1_56xQSo2FfBqeUmdMtxwxo_lC1q5UQUxPRFYzQVRFOUwyVVk1UkZXS0w1MThURi4u</url>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_Pardot_Emails</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Engage Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__MicroCampaignOpportunity</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_Single_Pardot_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Engage Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__MicroCampaignSingleOpportunity</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>
