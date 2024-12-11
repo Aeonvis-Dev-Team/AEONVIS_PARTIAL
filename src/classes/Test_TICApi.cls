@@ -178,4 +178,7 @@ public class Test_TICApi {
 		Documento.stato = 'a';
 		Documento.prezzoLordo = 200;
 	}
+
+
+
 }
